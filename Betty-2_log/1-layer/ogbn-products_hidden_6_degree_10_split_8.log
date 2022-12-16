@@ -1,0 +1,2056 @@
+main start at this time 1671171268.2173455
+-----------------------------------------before load data 
+ Nvidia-smi: 2.3907470703125 GB
+    Memory Allocated: 0.0  GigaBytes
+Max Memory Allocated: 0.0  GigaBytes
+
+#nodes: 2449029
+#edges: 123718024
+#classes: 47
+success----------------------------------------
+196571
+39255
+2164782
+# Nodes: 2400608
+# Edges: 123718024
+# Train: 196571
+# Val: 39255
+# Test: 2164782
+# Classes: 47
+
+----------------------------------------start of run function 
+ Nvidia-smi: 2.3907470703125 GB
+    Memory Allocated: 0.0  GigaBytes
+Max Memory Allocated: 0.0  GigaBytes
+
+in feats:  100
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 3.1094970703125 GB
+    Memory Allocated: 0.0003376007080078125  GigaBytes
+Max Memory Allocated: 0.0003376007080078125  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 3.4454345703125 GB
+    Memory Allocated: 0.3182086944580078  GigaBytes
+Max Memory Allocated: 0.3182086944580078  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 3.4454345703125 GB
+    Memory Allocated: 0.3182086944580078  GigaBytes
+Max Memory Allocated: 0.3182086944580078  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 3.5020751953125 GB
+    Memory Allocated: 0.3182086944580078  GigaBytes
+Max Memory Allocated: 0.3182086944580078  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 3.5020751953125 GB
+    Memory Allocated: 0.3182086944580078  GigaBytes
+Max Memory Allocated: 0.3182086944580078  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 3.5509033203125 GB
+    Memory Allocated: 0.3196907043457031  GigaBytes
+Max Memory Allocated: 0.3197035789489746  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 4.5645751953125 GB
+    Memory Allocated: 0.5944876670837402  GigaBytes
+Max Memory Allocated: 1.3277521133422852  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0948)
+------------------------------------- after loss backward 
+ Nvidia-smi: 4.5743408203125 GB
+    Memory Allocated: 0.35516977310180664  GigaBytes
+Max Memory Allocated: 1.3277521133422852  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 4.5743408203125 GB
+    Memory Allocated: 0.3200111389160156  GigaBytes
+Max Memory Allocated: 1.3277521133422852  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 4.5743408203125 GB
+    Memory Allocated: 0.3208189010620117  GigaBytes
+Max Memory Allocated: 1.3277521133422852  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24592, 24593, 24594], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.0255126953125 GB
+    Memory Allocated: 1.8355426788330078  GigaBytes
+Max Memory Allocated: 2.5781760215759277  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5859)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.0255126953125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.5781760215759277  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.0255126953125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.5781760215759277  GigaBytes
+
+core.py bucket local nid tensor([24595, 24596, 24597,  ..., 49175, 49176, 49177], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 1.8399386405944824  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5888)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+core.py bucket local nid tensor([49178, 49179, 49180,  ..., 73732, 73733, 73734], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 1.8399386405944824  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5899)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+core.py bucket local nid tensor([73735, 73736, 73737,  ..., 98318, 98320, 98321], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 1.8399386405944824  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5863)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+core.py bucket local nid tensor([ 98322,  98323,  98324,  ..., 122855, 122856, 122857], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 1.8399386405944824  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5872)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+core.py bucket local nid tensor([122858, 122859, 122860,  ..., 147376, 147377, 147378], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 1.8399386405944824  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5836)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+core.py bucket local nid tensor([147379, 147380, 147381,  ..., 171970, 171971, 171972], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 1.8399386405944824  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5871)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596324920654297  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+core.py bucket local nid tensor([171973, 171974, 171975,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 1.8395581245422363  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5876)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3596315383911133  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3200111389160156  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.7912)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+
+ Run 0| Epoch 0 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.6382002830505371  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.6382002830505371  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.1466064453125 GB
+    Memory Allocated: 0.6382002830505371  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3188643455505371  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.1153564453125 GB
+    Memory Allocated: 0.3203463554382324  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8419189453125 GB
+    Memory Allocated: 0.5953783988952637  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0937)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3554878234863281  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3203291893005371  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3211369514465332  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24545, 24546, 24547], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8358607292175293  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5803)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36007022857666016  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36007022857666016  GigaBytes
+Max Memory Allocated: 2.6169896125793457  GigaBytes
+
+core.py bucket local nid tensor([24548, 24549, 24550,  ..., 49130, 49131, 49132], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840376377105713  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5811)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35995054244995117  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35995054244995117  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+core.py bucket local nid tensor([49133, 49134, 49135,  ..., 73725, 73726, 73727], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840256690979004  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5781)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36007022857666016  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36007022857666016  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+core.py bucket local nid tensor([73728, 73729, 73730,  ..., 98295, 98296, 98297], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840376377105713  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5785)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35995054244995117  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35995054244995117  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+core.py bucket local nid tensor([ 98298,  98299,  98300,  ..., 122842, 122843, 122844], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840256690979004  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5822)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36007022857666016  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36007022857666016  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+core.py bucket local nid tensor([122845, 122846, 122847,  ..., 147427, 147428, 147429], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840376377105713  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5763)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35995054244995117  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35995054244995117  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+core.py bucket local nid tensor([147430, 147431, 147432,  ..., 171988, 171989, 171990], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840256690979004  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5799)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36007022857666016  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36007022857666016  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+core.py bucket local nid tensor([171991, 171992, 171993,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8399958610534668  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5772)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35994958877563477  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3203291893005371  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.7273)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3203291893005371  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+
+ Run 0| Epoch 1 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3203291893005371  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6382002830505371  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6382002830505371  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.8751220703125 GB
+    Memory Allocated: 0.6382002830505371  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31922149658203125  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32070350646972656  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.5955004692077637  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0926)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35584497451782227  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32149410247802734  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24570, 24571, 24572], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8362178802490234  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5720)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.617427349090576  GigaBytes
+
+core.py bucket local nid tensor([24573, 24574, 24575,  ..., 49151, 49152, 49153], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5703)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([49154, 49155, 49156,  ..., 73687, 73688, 73689], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5688)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([73690, 73691, 73692,  ..., 98309, 98310, 98311], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5751)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([ 98312,  98313,  98314,  ..., 122902, 122903, 122904], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5707)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([122905, 122906, 122907,  ..., 147452, 147453, 147454], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5716)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([147455, 147456, 147457,  ..., 171996, 171997, 171998], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5710)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([171999, 172000, 172001,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840233325958252  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5708)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603067398071289  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.6630)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+
+ Run 0| Epoch 2 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6380066871643066  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6380066871643066  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.8751220703125 GB
+    Memory Allocated: 0.6380066871643066  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31867074966430664  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32015275955200195  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.5951848030090332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0915)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35529422760009766  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32013559341430664  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32094335556030273  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24584, 24585, 24586], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8356671333312988  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5621)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3598766326904297  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3598766326904297  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([24587, 24588, 24589,  ..., 49193, 49194, 49195], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8401827812194824  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5615)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3597569465637207  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3597569465637207  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([49196, 49197, 49198,  ..., 73764, 73765, 73766], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8400630950927734  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5640)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3598766326904297  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3598766326904297  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([73767, 73768, 73769,  ..., 98306, 98307, 98308], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8401827812194824  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5643)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3597569465637207  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3597569465637207  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([ 98309,  98310,  98311,  ..., 122900, 122901, 122902], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8400630950927734  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5599)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3598766326904297  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3598766326904297  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([122903, 122904, 122905,  ..., 147443, 147444, 147445], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8401827812194824  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5621)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3597569465637207  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3597569465637207  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([147446, 147447, 147448,  ..., 172016, 172017, 172018], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8400630950927734  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5651)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3598766326904297  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3598766326904297  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([172019, 172020, 172021,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8398022651672363  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5690)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3597559928894043  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32013559341430664  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.5995)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32013559341430664  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+
+ Run 0| Epoch 3 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32013559341430664  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6380066871643066  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6380066871643066  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.8751220703125 GB
+    Memory Allocated: 0.6380066871643066  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31922149658203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32070350646972656  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.5955004692077637  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0904)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35584497451782227  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32149410247802734  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24572, 24573, 24574], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8362178802490234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5534)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([24575, 24576, 24577,  ..., 49120, 49121, 49122], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5562)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([49123, 49124, 49125,  ..., 73684, 73685, 73686], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5558)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([73687, 73688, 73689,  ..., 98296, 98297, 98298], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5588)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([ 98299,  98300,  98301,  ..., 122873, 122874, 122875], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5525)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([122876, 122877, 122878,  ..., 147443, 147444, 147445], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5548)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([147446, 147447, 147448,  ..., 171987, 171989, 171990], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5600)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([171991, 171992, 171993,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840233325958252  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5533)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603067398071289  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.5352)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+
+ Run 0| Epoch 4 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6381678581237793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6381678581237793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.8751220703125 GB
+    Memory Allocated: 0.6381678581237793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3188319206237793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3203139305114746  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.5953459739685059  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0893)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3554553985595703  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3202967643737793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3211045265197754  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24528, 24529, 24530], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8358283042907715  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5506)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36003780364990234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36003780364990234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([24531, 24532, 24533,  ..., 49147, 49148, 49149], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840343952178955  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5477)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35991811752319336  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35991811752319336  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([49150, 49151, 49152,  ..., 73737, 73738, 73739], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840224266052246  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5460)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36003780364990234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36003780364990234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([73740, 73741, 73742,  ..., 98295, 98296, 98297], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840343952178955  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5492)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35991811752319336  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35991811752319336  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([ 98298,  98299,  98300,  ..., 122867, 122868, 122869], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840224266052246  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5459)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36003780364990234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36003780364990234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([122870, 122871, 122872,  ..., 147413, 147414, 147415], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840343952178955  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5478)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35991811752319336  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35991811752319336  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([147416, 147417, 147418,  ..., 171954, 171955, 171956], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840224266052246  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5478)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36003780364990234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.36003780364990234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([171957, 171958, 171959,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.839963436126709  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5462)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35991716384887695  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3202967643737793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.4706)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3202967643737793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+
+ Run 0| Epoch 5 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3202967643737793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6381678581237793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6381678581237793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.8751220703125 GB
+    Memory Allocated: 0.6381678581237793  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31922149658203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32070350646972656  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.5955004692077637  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0882)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35584497451782227  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32149410247802734  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24547, 24548, 24549], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8362178802490234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5377)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([24550, 24551, 24552,  ..., 49105, 49106, 49107], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5408)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([49108, 49109, 49110,  ..., 73664, 73665, 73666], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5381)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([73667, 73668, 73669,  ..., 98235, 98236, 98238], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5384)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([ 98239,  98240,  98241,  ..., 122842, 122843, 122844], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5422)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([122845, 122846, 122847,  ..., 147459, 147460, 147461], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5391)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([147462, 147463, 147464,  ..., 172046, 172047, 172048], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5395)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([172049, 172050, 172051,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840233325958252  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5410)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603067398071289  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.4050)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+
+ Run 0| Epoch 6 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6377644538879395  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6377644538879395  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.8751220703125 GB
+    Memory Allocated: 0.6377644538879395  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31842851638793945  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31991052627563477  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.594942569732666  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0871)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35505199432373047  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31989336013793945  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32070112228393555  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24570, 24571, 24572], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8354249000549316  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5319)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3596343994140625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3596343994140625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([24573, 24574, 24575,  ..., 49089, 49090, 49091], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8399405479431152  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5308)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3595147132873535  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3595147132873535  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([49092, 49093, 49094,  ..., 73656, 73657, 73658], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8398208618164062  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5351)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3596343994140625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3596343994140625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([73659, 73660, 73661,  ..., 98258, 98259, 98260], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8399405479431152  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5264)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3595147132873535  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3595147132873535  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([ 98261,  98262,  98263,  ..., 122868, 122869, 122870], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8398208618164062  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5304)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3596343994140625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3596343994140625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([122871, 122872, 122873,  ..., 147415, 147416, 147417], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8399405479431152  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5309)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3595147132873535  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3595147132873535  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([147418, 147419, 147420,  ..., 171993, 171994, 171995], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8398208618164062  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5296)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3596343994140625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3596343994140625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([171996, 171997, 171998,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8395600318908691  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5360)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3595137596130371  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31989336013793945  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.3380)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31989336013793945  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+
+ Run 0| Epoch 7 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31989336013793945  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6377644538879395  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6377644538879395  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.8751220703125 GB
+    Memory Allocated: 0.6377644538879395  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31922149658203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32070350646972656  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.5955004692077637  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0859)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35584497451782227  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32149410247802734  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24591, 24592, 24593], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8362178802490234  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5262)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([24594, 24595, 24596,  ..., 49236, 49237, 49238], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5221)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([49239, 49240, 49241,  ..., 73796, 73797, 73798], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5301)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([73799, 73800, 73801,  ..., 98365, 98366, 98367], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5215)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([ 98368,  98369,  98370,  ..., 122923, 122924, 122925], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5206)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([122926, 122927, 122928,  ..., 147438, 147439, 147440], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5186)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([147441, 147442, 147443,  ..., 172005, 172007, 172008], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840613842010498  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5229)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603076934814453  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([172009, 172010, 172011,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840233325958252  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5223)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3603067398071289  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.2701)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+
+ Run 0| Epoch 8 |
+----------------------------------------- after full batch dataloader loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32068634033203125  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block subtensor loading 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6383295059204102  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after schedule preparing 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.6383295059204102  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after block to device loading 
+ Nvidia-smi: 6.8751220703125 GB
+    Memory Allocated: 0.6383295059204102  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- before degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.31899356842041016  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------ before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32047557830810547  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+------------------------------------- after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.5955076217651367  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0848)
+------------------------------------- after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.35561704635620117  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree grouping 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32045841217041016  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32126617431640625  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 24566, 24567, 24568], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8359899520874023  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5116)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3601994514465332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3601994514465332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([24569, 24570, 24571,  ..., 49114, 49115, 49116], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840505599975586  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5167)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3600797653198242  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3600797653198242  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([49117, 49118, 49119,  ..., 73676, 73677, 73678], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840385913848877  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5163)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3601994514465332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3601994514465332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([73679, 73680, 73681,  ..., 98234, 98235, 98236], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840505599975586  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5147)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3600797653198242  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3600797653198242  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([ 98237,  98238,  98239,  ..., 122812, 122813, 122814], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840385913848877  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5169)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3601994514465332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3601994514465332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([122815, 122816, 122817,  ..., 147388, 147389, 147390], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840505599975586  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5119)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3600797653198242  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3600797653198242  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([147391, 147392, 147393,  ..., 171986, 171987, 171988], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24077
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.840385913848877  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24077 ratio: 0.12248500541788972 bucket_loss : tensor(0.5107)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3601994514465332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------- before batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3601994514465332  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+core.py bucket local nid tensor([171989, 171990, 171991,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 24070
+------------------------------------after batch_pred = model(blocks, batch_inputs, deg.to(device)) 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 1.8401250839233398  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+degree: tensor(10) # of output: 24070 ratio: 0.12244939487513418 bucket_loss : tensor(0.5163)
+------------------------------------ after loss backward 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.3600788116455078  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+----------------------------------------- after degree split 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32045841217041016  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.1999)
+----------------------------------------- after optimizer.zero_grad() 
+ Nvidia-smi: 6.8438720703125 GB
+    Memory Allocated: 0.32045841217041016  GigaBytes
+Max Memory Allocated: 2.6176648139953613  GigaBytes
+
+
+ Run 0| Epoch 9 |
