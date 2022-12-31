@@ -1,0 +1,493 @@
+main start at this time 1671756079.4894786
+-----------------------------------------before load data 
+ Nvidia-smi: 0.166015625 GB
+    Memory Allocated: 0.0  GigaBytes
+Max Memory Allocated: 0.0  GigaBytes
+
+#nodes: 2449029
+#edges: 123718024
+#classes: 47
+success----------------------------------------
+196571
+39255
+2164782
+# Nodes: 2400608
+# Edges: 123718024
+# Train: 196571
+# Val: 39255
+# Test: 2164782
+# Classes: 47
+
+----------------------------------------start of run function 
+ Nvidia-smi: 0.166015625 GB
+    Memory Allocated: 0.0  GigaBytes
+Max Memory Allocated: 0.0  GigaBytes
+
+in feats:  100
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.08772993087768555
+
+bucketing time:  0.0012362003326416016
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0948)
+model forward time:  0.11838674545288086
+loss calculation time:  0.00012993812561035156
+loss backward time:  0.018112659454345703
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08917808532714844
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49174, 49175, 49176], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009663105010986328
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1749)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08327364921569824
+
+core.py bucket local nid tensor([49177, 49178, 49179,  ..., 98316, 98317, 98318], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009250640869140625
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1762)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08371472358703613
+
+core.py bucket local nid tensor([ 98320,  98321,  98322,  ..., 147373, 147374, 147375], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009410381317138672
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1706)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08378767967224121
+
+core.py bucket local nid tensor([147376, 147377, 147378,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009305477142333984
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.1753)
+split  buckets total input  1442210
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.7918)
+
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.07634234428405762
+
+bucketing time:  0.0011401176452636719
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0937)
+model forward time:  0.09296941757202148
+loss calculation time:  5.53131103515625e-05
+loss backward time:  0.016600847244262695
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08562183380126953
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49129, 49130, 49131], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009572505950927734
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1610)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08501005172729492
+
+core.py bucket local nid tensor([49132, 49133, 49134,  ..., 98293, 98294, 98295], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.000965118408203125
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1568)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08456039428710938
+
+core.py bucket local nid tensor([ 98296,  98297,  98298,  ..., 147424, 147425, 147426], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009272098541259766
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1585)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08544540405273438
+
+core.py bucket local nid tensor([147427, 147428, 147429,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009293556213378906
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.1573)
+split  buckets total input  1440934
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.7273)
+
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.07680153846740723
+
+bucketing time:  0.0011284351348876953
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0926)
+model forward time:  0.09228205680847168
+loss calculation time:  5.3882598876953125e-05
+loss backward time:  0.015042543411254883
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08524322509765625
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49150, 49151, 49152], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009322166442871094
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1425)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08375835418701172
+
+core.py bucket local nid tensor([49153, 49154, 49155,  ..., 98307, 98308, 98309], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009443759918212891
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1443)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08492445945739746
+
+core.py bucket local nid tensor([ 98310,  98311,  98312,  ..., 147449, 147450, 147451], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009326934814453125
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1424)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08427214622497559
+
+core.py bucket local nid tensor([147452, 147453, 147454,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009236335754394531
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.1418)
+split  buckets total input  1441351
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.6635)
+
+full batch graph loading time:  0.06919455528259277
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.07773733139038086
+
+bucketing time:  0.0011279582977294922
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0915)
+model forward time:  0.09313392639160156
+loss calculation time:  5.459785461425781e-05
+loss backward time:  0.00853109359741211
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08445405960083008
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49192, 49193, 49194], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009424686431884766
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1236)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08716678619384766
+
+core.py bucket local nid tensor([49195, 49196, 49197,  ..., 98304, 98305, 98306], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009398460388183594
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1281)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08539104461669922
+
+core.py bucket local nid tensor([ 98307,  98308,  98309,  ..., 147440, 147441, 147442], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009286403656005859
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1215)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08592820167541504
+
+core.py bucket local nid tensor([147443, 147444, 147445,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009391307830810547
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.1341)
+split  buckets total input  1441871
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.5988)
+
+pure train time 0.5625655651092529
+full batch graph loading time:  0.04896879196166992
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.0805196762084961
+
+bucketing time:  0.0011219978332519531
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0904)
+model forward time:  0.09591102600097656
+loss calculation time:  5.3882598876953125e-05
+loss backward time:  0.008469820022583008
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08440685272216797
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49119, 49120, 49121], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009293556213378906
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1094)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08519101142883301
+
+core.py bucket local nid tensor([49122, 49123, 49124,  ..., 98294, 98295, 98296], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009326934814453125
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1148)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.0863029956817627
+
+core.py bucket local nid tensor([ 98297,  98298,  98299,  ..., 147440, 147441, 147442], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.000934600830078125
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.1075)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08585858345031738
+
+core.py bucket local nid tensor([147443, 147444, 147445,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009341239929199219
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.1133)
+split  buckets total input  1441822
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.5354)
+
+pure train time 0.5625779628753662
+full batch graph loading time:  0.0574033260345459
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.08168697357177734
+
+bucketing time:  0.0011322498321533203
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0893)
+model forward time:  0.0970602035522461
+loss calculation time:  5.412101745605469e-05
+loss backward time:  0.012063026428222656
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08625984191894531
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49146, 49147, 49148], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009403228759765625
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0985)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08624625205993652
+
+core.py bucket local nid tensor([49149, 49150, 49151,  ..., 98293, 98294, 98295], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009267330169677734
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0953)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08832526206970215
+
+core.py bucket local nid tensor([ 98296,  98297,  98298,  ..., 147410, 147411, 147412], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009768009185791016
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0934)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.0872199535369873
+
+core.py bucket local nid tensor([147413, 147414, 147415,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0011570453643798828
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.0941)
+split  buckets total input  1442597
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.4706)
+
+pure train time 0.5760340690612793
+full batch graph loading time:  0.0377199649810791
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.07864522933959961
+
+bucketing time:  0.0011327266693115234
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0882)
+model forward time:  0.09434032440185547
+loss calculation time:  5.7220458984375e-05
+loss backward time:  0.009818553924560547
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08813643455505371
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49104, 49105, 49106], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009386539459228516
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0782)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08676004409790039
+
+core.py bucket local nid tensor([49107, 49108, 49109,  ..., 98233, 98234, 98235], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009739398956298828
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0765)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08681201934814453
+
+core.py bucket local nid tensor([ 98236,  98238,  98239,  ..., 147456, 147457, 147458], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009281635284423828
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0813)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08748269081115723
+
+core.py bucket local nid tensor([147459, 147460, 147461,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009405612945556641
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.0806)
+split  buckets total input  1441226
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.4048)
+
+pure train time 0.5689575672149658
+full batch graph loading time:  0.0549466609954834
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.07978653907775879
+
+bucketing time:  0.0011196136474609375
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0871)
+model forward time:  0.09516739845275879
+loss calculation time:  5.2928924560546875e-05
+loss backward time:  0.008712053298950195
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08721351623535156
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49088, 49089, 49090], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.00109100341796875
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0625)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08902692794799805
+
+core.py bucket local nid tensor([49091, 49092, 49093,  ..., 98256, 98257, 98258], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009515285491943359
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0612)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.0878286361694336
+
+core.py bucket local nid tensor([ 98259,  98260,  98261,  ..., 147412, 147413, 147414], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009284019470214844
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0610)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08789634704589844
+
+core.py bucket local nid tensor([147415, 147416, 147417,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009248256683349609
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.0663)
+split  buckets total input  1441628
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.3381)
+
+pure train time 0.5733656883239746
+full batch graph loading time:  0.03624320030212402
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.07987499237060547
+
+bucketing time:  0.0011143684387207031
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0859)
+model forward time:  0.09530830383300781
+loss calculation time:  5.626678466796875e-05
+loss backward time:  0.010662555694580078
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08878016471862793
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49235, 49236, 49237], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009639263153076172
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0481)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08762431144714355
+
+core.py bucket local nid tensor([49238, 49239, 49240,  ..., 98363, 98364, 98365], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009262561798095703
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0514)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08782744407653809
+
+core.py bucket local nid tensor([ 98366,  98367,  98368,  ..., 147435, 147436, 147437], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009245872497558594
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0393)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.0885915756225586
+
+core.py bucket local nid tensor([147438, 147439, 147440,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009255409240722656
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.0459)
+split  buckets total input  1441113
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.2706)
+
+pure train time 0.5759341716766357
+full batch graph loading time:  0.047547340393066406
+group buckets input  18164
+degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+torch.sort() replace to OrderedDict time:  0.08068442344665527
+
+bucketing time:  0.0011546611785888672
+degree: tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=torch.int32) # of output: 3962 ratio: 0.02015556719963779 bucket_loss : tensor(0.0848)
+model forward time:  0.0961771011352539
+loss calculation time:  6.127357482910156e-05
+loss backward time:  0.012189388275146484
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.09187078475952148
+
+core.py bucket local nid tensor([    0,     1,     2,  ..., 49113, 49114, 49115], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  0
+bucketing time:  0.0009450912475585938
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0279)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.08841872215270996
+
+core.py bucket local nid tensor([49116, 49117, 49118,  ..., 98232, 98233, 98234], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  1
+bucketing time:  0.0009312629699707031
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0308)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.0886235237121582
+
+core.py bucket local nid tensor([ 98235,  98236,  98237,  ..., 147385, 147386, 147387], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48153
+step:  2
+bucketing time:  0.0009202957153320312
+degree: tensor(10) # of output: 48153 ratio: 0.2449649236153858 bucket_loss : tensor(1.0284)
+degree  tensor(10)
+torch.sort() replace to OrderedDict time:  0.0882117748260498
+
+core.py bucket local nid tensor([147388, 147389, 147390,  ..., 196568, 196569, 196570], device='cuda:0')
+the length of bkt_idx in core.py _bucketing 48150
+step:  3
+bucketing time:  0.0009236335754394531
+degree: tensor(10) # of output: 48150 ratio: 0.24494966195420484 bucket_loss : tensor(1.0271)
+split  buckets total input  1441544
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.1990)
+
+pure train time 0.5832512378692627
+
+avg epoch time:  2.261810370853969
+avg pure train time:  0.5718123231615339
+avg block subtensor loading time:  0.1239309310913086
+avg preparing time:  0.18629298891339982
+avg block to device time:  0.015524966376168388
+avg grouping time:  0.12995103427342006
+avg splitting time:  1.7413535458700997
+avg optimizing time:  0.0010426044464111328
+
+avg input nodes number :  1459849.857142857
+avg input nodes number/pure train time :  2553022.727931761
+avg input nodes number/avg epoch time :  645434.2397376471
