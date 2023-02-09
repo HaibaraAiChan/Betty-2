@@ -1,0 +1,2864 @@
+main start at this time 1675982452.0662155
+-----------------------------------------before load data 
+ Nvidia-smi: 0.166015625 GB
+    Memory Allocated: 0.0  GigaBytes
+Max Memory Allocated: 0.0  GigaBytes
+
+#nodes: 2449029
+#edges: 123718024
+#classes: 47
+success----------------------------------------
+196571
+39255
+2164782
+# Nodes: 2400608
+# Edges: 123718024
+# Train: 196571
+# Val: 39255
+# Test: 2164782
+# Classes: 47
+
+----------------------------------------start of run function 
+ Nvidia-smi: 0.166015625 GB
+    Memory Allocated: 0.0  GigaBytes
+Max Memory Allocated: 0.0  GigaBytes
+
+in feats:  100
+EPOCH:  0
+group buckets input  18164
+
+current graph nodes  848910
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.0003600120544433594
+nodes = graph.dstnodes() time :  4.291534423828125e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.291534423828125e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.0004334449768066406
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08225297927856445
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0007557868957519531
+bucketing time:  0.08361983299255371
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00035643577575683594
+assert len(eid_bkt) == deg * len(node_bkt):  1.0251998901367188e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  8.58306884765625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  3.4809112548828125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.054473876953125e-05
+eid_bkt generation:  0.00043129920959472656
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.765655517578125e-05
+msgdata_bkt generation:  0.0004589557647705078
+msgdata_bkt for loop:  0.00022149085998535156
+NodeBatch generation:  6.67572021484375e-06
+func(nbatch):  0.0035920143127441406
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0003159046173095703
+assert len(eid_bkt) == deg * len(node_bkt):  7.3909759521484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  4.5299530029296875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.2649765014648438e-05
+ndata_bkt = dstdata.subframe(node_bkt):  4.076957702636719e-05
+eid_bkt generation:  0.00036263465881347656
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.1696090698242188e-05
+msgdata_bkt generation:  0.00038433074951171875
+msgdata_bkt for loop:  0.00011086463928222656
+NodeBatch generation:  5.245208740234375e-06
+func(nbatch):  0.0004982948303222656
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022792816162109375
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.2874603271484375e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.123283386230469e-05
+eid_bkt generation:  0.0002627372741699219
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002815723419189453
+msgdata_bkt for loop:  9.012222290039062e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0009186267852783203
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021266937255859375
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3589859008789062e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0994415283203125e-05
+eid_bkt generation:  0.0002472400665283203
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.0002663135528564453
+msgdata_bkt for loop:  9.036064147949219e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0012664794921875
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002238750457763672
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4066696166992188e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.147125244140625e-05
+eid_bkt generation:  0.00025963783264160156
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.00027871131896972656
+msgdata_bkt for loop:  9.012222290039062e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0015265941619873047
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021457672119140625
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4543533325195312e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.075599670410156e-05
+eid_bkt generation:  0.0002505779266357422
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.0002696514129638672
+msgdata_bkt for loop:  9.274482727050781e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0017504692077636719
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002186298370361328
+assert len(eid_bkt) == deg * len(node_bkt):  6.198883056640625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.6450881958007812e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.1948089599609375e-05
+eid_bkt generation:  0.0002560615539550781
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00027489662170410156
+msgdata_bkt for loop:  0.00010442733764648438
+NodeBatch generation:  3.337860107421875e-06
+func(nbatch):  0.002274036407470703
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022029876708984375
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3828277587890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.147125244140625e-05
+eid_bkt generation:  0.00025534629821777344
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.8133392333984375e-05
+msgdata_bkt generation:  0.0002834796905517578
+msgdata_bkt for loop:  8.96453857421875e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.002242565155029297
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022268295288085938
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.6927719116210938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.147125244140625e-05
+eid_bkt generation:  0.0002613067626953125
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00028014183044433594
+msgdata_bkt for loop:  0.00010752677917480469
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.002628803253173828
+----NodeBatch generation time:  0.02124953269958496
+----Frame generation time:  1.0967254638671875e-05
+---- merge nodes time:  0.0006527900695800781
+invoke_udf_reduce time:  0.11153459548950195
+preparing time:  0.24988794326782227
+model forward time:  0.11445045471191406
+loss calculation time:  0.00020170211791992188
+partial loss calculation time:  0.0005795955657958984
+loss backward time:  0.01976776123046875
+
+current graph nodes  848910
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00014829635620117188
+nodes = graph.dstnodes() time :  3.409385681152344e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.0531158447265625e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00020837783813476562
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08230352401733398
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010943412780761719
+tmp = F.gather_row(idx, eqidx)  2.9325485229492188e-05
+N = math.ceil(len(tmp)/num_split)  1.430511474609375e-05
+unique_val = np.asarray(list([degree.item()]))  4.887580871582031e-05
+step:  0
+bucketing time:  0.08311891555786133
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007548332214355469
+assert len(eid_bkt) == deg * len(node_bkt):  1.5735626220703125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.9141387939453125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00042176246643066406
+ndata_bkt = dstdata.subframe(node_bkt):  5.221366882324219e-05
+eid_bkt generation:  0.0012161731719970703
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.409385681152344e-05
+msgdata_bkt generation:  0.0012502670288085938
+msgdata_bkt for loop:  0.001079559326171875
+NodeBatch generation:  4.5299530029296875e-06
+func(nbatch):  0.009318351745605469
+----NodeBatch generation time:  0.011773347854614258
+----Frame generation time:  1.2159347534179688e-05
+---- merge nodes time:  0.00017404556274414062
+invoke_udf_reduce time:  0.09548544883728027
+
+current graph nodes  848910
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00016236305236816406
+nodes = graph.dstnodes() time :  2.8133392333984375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.000217437744140625
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08208751678466797
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.000110626220703125
+tmp = F.gather_row(idx, eqidx)  2.8848648071289062e-05
+N = math.ceil(len(tmp)/num_split)  1.0728836059570312e-05
+unique_val = np.asarray(list([degree.item()]))  3.314018249511719e-05
+step:  1
+bucketing time:  0.08282732963562012
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008270740509033203
+assert len(eid_bkt) == deg * len(node_bkt):  1.5735626220703125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002894401550292969
+ndata_bkt = dstdata.subframe(node_bkt):  5.054473876953125e-05
+eid_bkt generation:  0.0011548995971679688
+msgdata_bkt = msgdata.subframe(eid_bkt):  4.9114227294921875e-05
+msgdata_bkt generation:  0.0012040138244628906
+msgdata_bkt for loop:  0.0006272792816162109
+NodeBatch generation:  5.245208740234375e-06
+func(nbatch):  0.001312255859375
+----NodeBatch generation time:  0.003268003463745117
+----Frame generation time:  1.2159347534179688e-05
+---- merge nodes time:  0.0001785755157470703
+invoke_udf_reduce time:  0.08668661117553711
+
+current graph nodes  848910
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001583099365234375
+nodes = graph.dstnodes() time :  2.8133392333984375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002129077911376953
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08433747291564941
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0001285076141357422
+tmp = F.gather_row(idx, eqidx)  2.956390380859375e-05
+N = math.ceil(len(tmp)/num_split)  1.1444091796875e-05
+unique_val = np.asarray(list([degree.item()]))  3.337860107421875e-05
+step:  2
+bucketing time:  0.08509945869445801
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008175373077392578
+assert len(eid_bkt) == deg * len(node_bkt):  1.7881393432617188e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00029730796813964844
+ndata_bkt = dstdata.subframe(node_bkt):  5.125999450683594e-05
+eid_bkt generation:  0.001157522201538086
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.552436828613281e-05
+msgdata_bkt generation:  0.0011930465698242188
+msgdata_bkt for loop:  0.0006444454193115234
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.000835418701171875
+----NodeBatch generation time:  0.0027930736541748047
+----Frame generation time:  1.239776611328125e-05
+---- merge nodes time:  0.0001685619354248047
+invoke_udf_reduce time:  0.0884706974029541
+
+current graph nodes  848910
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015783309936523438
+nodes = graph.dstnodes() time :  2.956390380859375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002155303955078125
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08226370811462402
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011086463928222656
+tmp = F.gather_row(idx, eqidx)  2.8848648071289062e-05
+N = math.ceil(len(tmp)/num_split)  1.0967254638671875e-05
+unique_val = np.asarray(list([degree.item()]))  3.337860107421875e-05
+step:  3
+bucketing time:  0.0829920768737793
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007588863372802734
+assert len(eid_bkt) == deg * len(node_bkt):  1.7404556274414062e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002872943878173828
+ndata_bkt = dstdata.subframe(node_bkt):  5.078315734863281e-05
+eid_bkt generation:  0.001085519790649414
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.647804260253906e-05
+msgdata_bkt generation:  0.0011219978332519531
+msgdata_bkt for loop:  0.0006232261657714844
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008261203765869141
+----NodeBatch generation time:  0.0026941299438476562
+----Frame generation time:  1.2636184692382812e-05
+---- merge nodes time:  0.00016498565673828125
+invoke_udf_reduce time:  0.08626222610473633
+split  buckets total input  1442210
+preparing time:  0.0720365047454834
+model forward time :  0.3609037399291992
+model forward time + loss calculation time:  0.3613169193267822
+loss backward time:  0.01487112045288086
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.7918)
+
+EPOCH:  1
+group buckets input  18164
+
+current graph nodes  848027
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.00016760826110839844
+nodes = graph.dstnodes() time :  2.9802322387695312e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.5762786865234375e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00022721290588378906
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.07652664184570312
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0006840229034423828
+bucketing time:  0.07773184776306152
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0003514289855957031
+assert len(eid_bkt) == deg * len(node_bkt):  1.1920928955078125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.765655517578125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.1975250244140625e-05
+eid_bkt generation:  0.00041937828063964844
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.7894973754882812e-05
+msgdata_bkt generation:  0.00044727325439453125
+msgdata_bkt for loop:  0.00014543533325195312
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0003714561462402344
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002620220184326172
+assert len(eid_bkt) == deg * len(node_bkt):  7.3909759521484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.814697265625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.8358230590820312e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.886222839355469e-05
+eid_bkt generation:  0.00030350685119628906
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.09808349609375e-05
+msgdata_bkt generation:  0.00032448768615722656
+msgdata_bkt for loop:  9.989738464355469e-05
+NodeBatch generation:  4.5299530029296875e-06
+func(nbatch):  0.0003094673156738281
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00024008750915527344
+assert len(eid_bkt) == deg * len(node_bkt):  7.152557373046875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5020370483398438e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.123283386230469e-05
+eid_bkt generation:  0.0002779960632324219
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.0002970695495605469
+msgdata_bkt for loop:  9.202957153320312e-05
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0003254413604736328
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002186298370361328
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3589859008789062e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.075599670410156e-05
+eid_bkt generation:  0.0002541542053222656
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00027298927307128906
+msgdata_bkt for loop:  9.179115295410156e-05
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0003294944763183594
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021195411682128906
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3589859008789062e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.8848648071289062e-05
+eid_bkt generation:  0.00024628639221191406
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.811981201171875e-05
+msgdata_bkt generation:  0.0002644062042236328
+msgdata_bkt for loop:  9.202957153320312e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00036716461181640625
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002124309539794922
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4066696166992188e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002472400665283203
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002655982971191406
+msgdata_bkt for loop:  9.250640869140625e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0004172325134277344
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021505355834960938
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5497207641601562e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0994415283203125e-05
+eid_bkt generation:  0.00025272369384765625
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.00027179718017578125
+msgdata_bkt for loop:  9.369850158691406e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00045299530029296875
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021958351135253906
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3113021850585938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.790855407714844e-05
+eid_bkt generation:  0.0002543926239013672
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002727508544921875
+msgdata_bkt for loop:  9.34600830078125e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0004978179931640625
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021719932556152344
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5735626220703125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0279159545898438e-05
+eid_bkt generation:  0.0002543926239013672
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002732276916503906
+msgdata_bkt for loop:  9.465217590332031e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0005402565002441406
+----NodeBatch generation time:  0.008017301559448242
+----Frame generation time:  1.049041748046875e-05
+---- merge nodes time:  0.0001647472381591797
+invoke_udf_reduce time:  0.09179067611694336
+preparing time:  0.020299434661865234
+model forward time:  0.09389567375183105
+loss calculation time:  6.318092346191406e-05
+partial loss calculation time:  0.0009946823120117188
+loss backward time:  0.015340328216552734
+
+current graph nodes  848027
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00032830238342285156
+nodes = graph.dstnodes() time :  8.487701416015625e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  9.298324584960938e-06
+msgdata = Frame(msgdata) time :  1.1920928955078125e-06
+get ready time :  0.0004763603210449219
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.09312796592712402
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011563301086425781
+tmp = F.gather_row(idx, eqidx)  2.8371810913085938e-05
+N = math.ceil(len(tmp)/num_split)  1.1682510375976562e-05
+unique_val = np.asarray(list([degree.item()]))  3.552436828613281e-05
+step:  0
+bucketing time:  0.09386801719665527
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007534027099609375
+assert len(eid_bkt) == deg * len(node_bkt):  1.8358230590820312e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.67572021484375e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00042700767517089844
+ndata_bkt = dstdata.subframe(node_bkt):  5.125999450683594e-05
+eid_bkt generation:  0.0012226104736328125
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.886222839355469e-05
+msgdata_bkt generation:  0.0012614727020263672
+msgdata_bkt for loop:  0.0006442070007324219
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008413791656494141
+----NodeBatch generation time:  0.002868175506591797
+----Frame generation time:  1.239776611328125e-05
+---- merge nodes time:  0.00016498565673828125
+invoke_udf_reduce time:  0.09770536422729492
+
+current graph nodes  848027
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015878677368164062
+nodes = graph.dstnodes() time :  2.7418136596679688e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021386146545410156
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08265066146850586
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0001125335693359375
+tmp = F.gather_row(idx, eqidx)  2.9325485229492188e-05
+N = math.ceil(len(tmp)/num_split)  1.1920928955078125e-05
+unique_val = np.asarray(list([degree.item()]))  3.314018249511719e-05
+step:  1
+bucketing time:  0.08337879180908203
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00083160400390625
+assert len(eid_bkt) == deg * len(node_bkt):  1.9073486328125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.9141387939453125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00028443336486816406
+ndata_bkt = dstdata.subframe(node_bkt):  5.054473876953125e-05
+eid_bkt generation:  0.0011584758758544922
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.790855407714844e-05
+msgdata_bkt generation:  0.0011963844299316406
+msgdata_bkt for loop:  0.0006349086761474609
+NodeBatch generation:  5.245208740234375e-06
+func(nbatch):  0.0008347034454345703
+----NodeBatch generation time:  0.002850055694580078
+----Frame generation time:  1.6450881958007812e-05
+---- merge nodes time:  0.0001895427703857422
+invoke_udf_reduce time:  0.08683180809020996
+
+current graph nodes  848027
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001533031463623047
+nodes = graph.dstnodes() time :  2.7894973754882812e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002067089080810547
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08470010757446289
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011134147644042969
+tmp = F.gather_row(idx, eqidx)  2.9802322387695312e-05
+N = math.ceil(len(tmp)/num_split)  1.1205673217773438e-05
+unique_val = np.asarray(list([degree.item()]))  3.409385681152344e-05
+step:  2
+bucketing time:  0.08542537689208984
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008406639099121094
+assert len(eid_bkt) == deg * len(node_bkt):  1.9311904907226562e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002818107604980469
+ndata_bkt = dstdata.subframe(node_bkt):  5.173683166503906e-05
+eid_bkt generation:  0.0011663436889648438
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.9577484130859375e-05
+msgdata_bkt generation:  0.0012059211730957031
+msgdata_bkt for loop:  0.0006210803985595703
+NodeBatch generation:  4.76837158203125e-06
+func(nbatch):  0.0008544921875
+----NodeBatch generation time:  0.0028078556060791016
+----Frame generation time:  1.1920928955078125e-05
+---- merge nodes time:  0.00016689300537109375
+invoke_udf_reduce time:  0.08881044387817383
+
+current graph nodes  848027
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001544952392578125
+nodes = graph.dstnodes() time :  2.7894973754882812e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.337860107421875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00020956993103027344
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08332324028015137
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011038780212402344
+tmp = F.gather_row(idx, eqidx)  2.956390380859375e-05
+N = math.ceil(len(tmp)/num_split)  1.1682510375976562e-05
+unique_val = np.asarray(list([degree.item()]))  3.314018249511719e-05
+step:  3
+bucketing time:  0.08405351638793945
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007557868957519531
+assert len(eid_bkt) == deg * len(node_bkt):  1.811981201171875e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00043129920959472656
+ndata_bkt = dstdata.subframe(node_bkt):  5.078315734863281e-05
+eid_bkt generation:  0.0012278556823730469
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.743171691894531e-05
+msgdata_bkt generation:  0.0012652873992919922
+msgdata_bkt for loop:  0.0006258487701416016
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008351802825927734
+----NodeBatch generation time:  0.0028493404388427734
+----Frame generation time:  1.2159347534179688e-05
+---- merge nodes time:  0.0001659393310546875
+invoke_udf_reduce time:  0.0874779224395752
+split  buckets total input  1440934
+preparing time:  0.08213496208190918
+model forward time :  0.36548328399658203
+model forward time + loss calculation time:  0.3659038543701172
+loss backward time:  0.0156252384185791
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.7273)
+
+EPOCH:  2
+group buckets input  18164
+
+current graph nodes  848038
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.0001621246337890625
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  5.245208740234375e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.00022172927856445312
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.0758504867553711
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0006833076477050781
+bucketing time:  0.07705998420715332
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0003523826599121094
+assert len(eid_bkt) == deg * len(node_bkt):  1.1682510375976562e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  7.152557373046875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.6226043701171875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.0067901611328125e-05
+eid_bkt generation:  0.00042176246643066406
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.7179718017578125e-05
+msgdata_bkt generation:  0.0004489421844482422
+msgdata_bkt for loop:  0.000133514404296875
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.000377655029296875
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00026106834411621094
+assert len(eid_bkt) == deg * len(node_bkt):  7.867813110351562e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  4.0531158447265625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.52587890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.695487976074219e-05
+eid_bkt generation:  0.0003020763397216797
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.1219253540039062e-05
+msgdata_bkt generation:  0.00032329559326171875
+msgdata_bkt for loop:  0.00010848045349121094
+NodeBatch generation:  5.7220458984375e-06
+func(nbatch):  0.0003199577331542969
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022101402282714844
+assert len(eid_bkt) == deg * len(node_bkt):  6.198883056640625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3113021850585938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002543926239013672
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.0002734661102294922
+msgdata_bkt for loop:  8.916854858398438e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.000293731689453125
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022220611572265625
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3113021850585938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0279159545898438e-05
+eid_bkt generation:  0.0002567768096923828
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9550323486328125e-05
+msgdata_bkt generation:  0.00027632713317871094
+msgdata_bkt for loop:  9.1552734375e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0003437995910644531
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021791458129882812
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  2.86102294921875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.33514404296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0994415283203125e-05
+eid_bkt generation:  0.00025343894958496094
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002722740173339844
+msgdata_bkt for loop:  9.012222290039062e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.00037479400634765625
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022530555725097656
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5020370483398438e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.24249267578125e-05
+eid_bkt generation:  0.0002624988555908203
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00028133392333984375
+msgdata_bkt for loop:  9.417533874511719e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0004553794860839844
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022220611572265625
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5974044799804688e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002593994140625
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002777576446533203
+msgdata_bkt for loop:  9.512901306152344e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.000457763671875
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002167224884033203
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3113021850585938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9802322387695312e-05
+eid_bkt generation:  0.0002512931823730469
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002701282501220703
+msgdata_bkt for loop:  9.34600830078125e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0004971027374267578
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00023055076599121094
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.621246337890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0279159545898438e-05
+eid_bkt generation:  0.00026798248291015625
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002868175506591797
+msgdata_bkt for loop:  9.72747802734375e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0005388259887695312
+----NodeBatch generation time:  0.008060932159423828
+----Frame generation time:  1.0013580322265625e-05
+---- merge nodes time:  0.0001583099365234375
+invoke_udf_reduce time:  0.09117460250854492
+preparing time:  0.02012777328491211
+model forward time:  0.09212517738342285
+loss calculation time:  7.104873657226562e-05
+partial loss calculation time:  0.0009927749633789062
+loss backward time:  0.008937358856201172
+
+current graph nodes  848038
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001461505889892578
+nodes = graph.dstnodes() time :  3.3855438232421875e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.5762786865234375e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.00020599365234375
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08147907257080078
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010943412780761719
+tmp = F.gather_row(idx, eqidx)  2.8848648071289062e-05
+N = math.ceil(len(tmp)/num_split)  1.1682510375976562e-05
+unique_val = np.asarray(list([degree.item()]))  3.3855438232421875e-05
+step:  0
+bucketing time:  0.08219194412231445
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007472038269042969
+assert len(eid_bkt) == deg * len(node_bkt):  1.6450881958007812e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002868175506591797
+ndata_bkt = dstdata.subframe(node_bkt):  5.125999450683594e-05
+eid_bkt generation:  0.0010752677917480469
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.4332275390625e-05
+msgdata_bkt generation:  0.0011096000671386719
+msgdata_bkt for loop:  0.0006256103515625
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0008525848388671875
+----NodeBatch generation time:  0.002706766128540039
+----Frame generation time:  1.2636184692382812e-05
+---- merge nodes time:  0.00016307830810546875
+invoke_udf_reduce time:  0.08545112609863281
+
+current graph nodes  848038
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00016927719116210938
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.337860107421875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00022673606872558594
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.0822751522064209
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011730194091796875
+tmp = F.gather_row(idx, eqidx)  3.075599670410156e-05
+N = math.ceil(len(tmp)/num_split)  1.1444091796875e-05
+unique_val = np.asarray(list([degree.item()]))  3.4809112548828125e-05
+step:  1
+bucketing time:  0.08301305770874023
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007488727569580078
+assert len(eid_bkt) == deg * len(node_bkt):  1.7642974853515625e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00029087066650390625
+ndata_bkt = dstdata.subframe(node_bkt):  5.125999450683594e-05
+eid_bkt generation:  0.0010802745819091797
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.504753112792969e-05
+msgdata_bkt generation:  0.0011153221130371094
+msgdata_bkt for loop:  0.0006287097930908203
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008318424224853516
+----NodeBatch generation time:  0.0027005672454833984
+----Frame generation time:  1.1682510375976562e-05
+---- merge nodes time:  0.0001628398895263672
+invoke_udf_reduce time:  0.08630156517028809
+
+current graph nodes  848038
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001614093780517578
+nodes = graph.dstnodes() time :  2.765655517578125e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.337860107421875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021576881408691406
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08350062370300293
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0001373291015625
+tmp = F.gather_row(idx, eqidx)  2.956390380859375e-05
+N = math.ceil(len(tmp)/num_split)  1.0967254638671875e-05
+unique_val = np.asarray(list([degree.item()]))  3.314018249511719e-05
+step:  2
+bucketing time:  0.08424878120422363
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007522106170654297
+assert len(eid_bkt) == deg * len(node_bkt):  1.621246337890625e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0003006458282470703
+ndata_bkt = dstdata.subframe(node_bkt):  5.316734313964844e-05
+eid_bkt generation:  0.0010905265808105469
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.3855438232421875e-05
+msgdata_bkt generation:  0.0011243820190429688
+msgdata_bkt for loop:  0.0006222724914550781
+NodeBatch generation:  4.5299530029296875e-06
+func(nbatch):  0.0008370876312255859
+----NodeBatch generation time:  0.002710580825805664
+----Frame generation time:  1.239776611328125e-05
+---- merge nodes time:  0.00016236305236816406
+invoke_udf_reduce time:  0.0875391960144043
+
+current graph nodes  848038
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00016117095947265625
+nodes = graph.dstnodes() time :  2.9087066650390625e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002186298370361328
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08366870880126953
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011038780212402344
+tmp = F.gather_row(idx, eqidx)  2.9325485229492188e-05
+N = math.ceil(len(tmp)/num_split)  1.0013580322265625e-05
+unique_val = np.asarray(list([degree.item()]))  3.337860107421875e-05
+step:  3
+bucketing time:  0.08439040184020996
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007414817810058594
+assert len(eid_bkt) == deg * len(node_bkt):  1.5020370483398438e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00029349327087402344
+ndata_bkt = dstdata.subframe(node_bkt):  5.125999450683594e-05
+eid_bkt generation:  0.0010726451873779297
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.4332275390625e-05
+msgdata_bkt generation:  0.0011069774627685547
+msgdata_bkt for loop:  0.0006234645843505859
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0008492469787597656
+----NodeBatch generation time:  0.0027027130126953125
+----Frame generation time:  1.1920928955078125e-05
+---- merge nodes time:  0.00017142295837402344
+invoke_udf_reduce time:  0.08774352073669434
+split  buckets total input  1441351
+preparing time:  0.08089613914489746
+model forward time :  0.35108399391174316
+model forward time + loss calculation time:  0.351520299911499
+loss backward time:  0.016776084899902344
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.6635)
+
+EPOCH:  3
+full batch graph loading time:  0.04326176643371582
+group buckets input  18164
+
+current graph nodes  848349
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.0001533031463623047
+nodes = graph.dstnodes() time :  2.7179718017578125e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.5762786865234375e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.00020766258239746094
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.07743501663208008
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0006749629974365234
+bucketing time:  0.07862353324890137
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.000354766845703125
+assert len(eid_bkt) == deg * len(node_bkt):  1.1920928955078125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.7179718017578125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.1975250244140625e-05
+eid_bkt generation:  0.0004184246063232422
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.6464462280273438e-05
+msgdata_bkt generation:  0.0004448890686035156
+msgdata_bkt for loop:  0.00013399124145507812
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0003733634948730469
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002651214599609375
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.814697265625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.6450881958007812e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.790855407714844e-05
+eid_bkt generation:  0.00030541419982910156
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.193450927734375e-05
+msgdata_bkt generation:  0.0003273487091064453
+msgdata_bkt for loop:  0.00010943412780761719
+NodeBatch generation:  5.4836273193359375e-06
+func(nbatch):  0.00031280517578125
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021767616271972656
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3828277587890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.956390380859375e-05
+eid_bkt generation:  0.0002529621124267578
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002713203430175781
+msgdata_bkt for loop:  8.916854858398438e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.00028824806213378906
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.000213623046875
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.33514404296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002472400665283203
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002655982971191406
+msgdata_bkt for loop:  8.940696716308594e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0003440380096435547
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002148151397705078
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3113021850585938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0279159545898438e-05
+eid_bkt generation:  0.00025081634521484375
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9550323486328125e-05
+msgdata_bkt generation:  0.0002703666687011719
+msgdata_bkt for loop:  9.012222290039062e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0003724098205566406
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021600723266601562
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4543533325195312e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9802322387695312e-05
+eid_bkt generation:  0.00025272369384765625
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9311904907226562e-05
+msgdata_bkt generation:  0.0002720355987548828
+msgdata_bkt for loop:  9.250640869140625e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0004258155822753906
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021791458129882812
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.5762786865234375e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4781951904296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002536773681640625
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002720355987548828
+msgdata_bkt for loop:  9.512901306152344e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0004684925079345703
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002155303955078125
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3589859008789062e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.075599670410156e-05
+eid_bkt generation:  0.00025010108947753906
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.00026917457580566406
+msgdata_bkt for loop:  9.250640869140625e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0004956722259521484
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021791458129882812
+assert len(eid_bkt) == deg * len(node_bkt):  6.198883056640625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.4080276489257812e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.00032806396484375
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.1457672119140625e-05
+msgdata_bkt generation:  0.0003495216369628906
+msgdata_bkt for loop:  0.0001049041748046875
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0005748271942138672
+----NodeBatch generation time:  0.008029460906982422
+----Frame generation time:  1.0967254638671875e-05
+---- merge nodes time:  0.00015926361083984375
+invoke_udf_reduce time:  0.092681884765625
+preparing time:  0.02071666717529297
+model forward time:  0.09365296363830566
+loss calculation time:  6.4849853515625e-05
+partial loss calculation time:  0.0010116100311279297
+loss backward time:  0.010686874389648438
+
+current graph nodes  848349
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001399517059326172
+nodes = graph.dstnodes() time :  3.647804260253906e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.0531158447265625e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00020503997802734375
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08447933197021484
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010919570922851562
+tmp = F.gather_row(idx, eqidx)  2.956390380859375e-05
+N = math.ceil(len(tmp)/num_split)  1.0728836059570312e-05
+unique_val = np.asarray(list([degree.item()]))  3.5762786865234375e-05
+step:  0
+bucketing time:  0.08519792556762695
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007467269897460938
+assert len(eid_bkt) == deg * len(node_bkt):  1.71661376953125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.9141387939453125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00028133392333984375
+ndata_bkt = dstdata.subframe(node_bkt):  5.078315734863281e-05
+eid_bkt generation:  0.0010693073272705078
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.5762786865234375e-05
+msgdata_bkt generation:  0.0011050701141357422
+msgdata_bkt for loop:  0.0006191730499267578
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008490085601806641
+----NodeBatch generation time:  0.0026972293853759766
+----Frame generation time:  1.1682510375976562e-05
+---- merge nodes time:  0.00016236305236816406
+invoke_udf_reduce time:  0.08845376968383789
+
+current graph nodes  848349
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015997886657714844
+nodes = graph.dstnodes() time :  2.7418136596679688e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.337860107421875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002155303955078125
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08403539657592773
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011444091796875
+tmp = F.gather_row(idx, eqidx)  2.8848648071289062e-05
+N = math.ceil(len(tmp)/num_split)  1.1682510375976562e-05
+unique_val = np.asarray(list([degree.item()]))  3.4809112548828125e-05
+step:  1
+bucketing time:  0.0847635269165039
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007402896881103516
+assert len(eid_bkt) == deg * len(node_bkt):  1.71661376953125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002970695495605469
+ndata_bkt = dstdata.subframe(node_bkt):  5.14984130859375e-05
+eid_bkt generation:  0.001077413558959961
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.6716461181640625e-05
+msgdata_bkt generation:  0.0011141300201416016
+msgdata_bkt for loop:  0.0006184577941894531
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008263587951660156
+----NodeBatch generation time:  0.0026960372924804688
+----Frame generation time:  1.2159347534179688e-05
+---- merge nodes time:  0.0001785755157470703
+invoke_udf_reduce time:  0.08807992935180664
+
+current graph nodes  848349
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001647472381591797
+nodes = graph.dstnodes() time :  2.8133392333984375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002205371856689453
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08384084701538086
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011110305786132812
+tmp = F.gather_row(idx, eqidx)  2.8848648071289062e-05
+N = math.ceil(len(tmp)/num_split)  1.1682510375976562e-05
+unique_val = np.asarray(list([degree.item()]))  3.24249267578125e-05
+step:  2
+bucketing time:  0.08456897735595703
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007712841033935547
+assert len(eid_bkt) == deg * len(node_bkt):  1.6927719116210938e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00029540061950683594
+ndata_bkt = dstdata.subframe(node_bkt):  5.14984130859375e-05
+eid_bkt generation:  0.0011055469512939453
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.4809112548828125e-05
+msgdata_bkt generation:  0.0011403560638427734
+msgdata_bkt for loop:  0.0006265640258789062
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008623600006103516
+----NodeBatch generation time:  0.0027506351470947266
+----Frame generation time:  1.1920928955078125e-05
+---- merge nodes time:  0.00018167495727539062
+invoke_udf_reduce time:  0.08792662620544434
+
+current graph nodes  848349
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00016045570373535156
+nodes = graph.dstnodes() time :  2.7894973754882812e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021529197692871094
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08645033836364746
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011467933654785156
+tmp = F.gather_row(idx, eqidx)  2.956390380859375e-05
+N = math.ceil(len(tmp)/num_split)  1.1444091796875e-05
+unique_val = np.asarray(list([degree.item()]))  3.361701965332031e-05
+step:  3
+bucketing time:  0.08718156814575195
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00075531005859375
+assert len(eid_bkt) == deg * len(node_bkt):  1.6927719116210938e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00027632713317871094
+ndata_bkt = dstdata.subframe(node_bkt):  5.078315734863281e-05
+eid_bkt generation:  0.0010716915130615234
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.528594970703125e-05
+msgdata_bkt generation:  0.0011069774627685547
+msgdata_bkt for loop:  0.0006163120269775391
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008356571197509766
+----NodeBatch generation time:  0.0026793479919433594
+----Frame generation time:  1.2159347534179688e-05
+---- merge nodes time:  0.00016689300537109375
+invoke_udf_reduce time:  0.0904381275177002
+split  buckets total input  1441871
+preparing time:  0.08092236518859863
+model forward time :  0.35882067680358887
+model forward time + loss calculation time:  0.35925936698913574
+loss backward time:  0.01851344108581543
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.5988)
+
+pure train time 0.4821774959564209
+EPOCH:  4
+full batch graph loading time:  0.06442737579345703
+group buckets input  18164
+
+current graph nodes  848190
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.00016236305236816406
+nodes = graph.dstnodes() time :  2.956390380859375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.291534423828125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002219676971435547
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.07843923568725586
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0006690025329589844
+bucketing time:  0.07963156700134277
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0003521442413330078
+assert len(eid_bkt) == deg * len(node_bkt):  1.1205673217773438e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  3.24249267578125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.245208740234375e-05
+eid_bkt generation:  0.00042366981506347656
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.8133392333984375e-05
+msgdata_bkt generation:  0.00045180320739746094
+msgdata_bkt for loop:  0.00013756752014160156
+NodeBatch generation:  4.76837158203125e-06
+func(nbatch):  0.0003705024719238281
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00025010108947753906
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.814697265625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.621246337890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.743171691894531e-05
+eid_bkt generation:  0.00028896331787109375
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.1457672119140625e-05
+msgdata_bkt generation:  0.0003104209899902344
+msgdata_bkt for loop:  0.00010466575622558594
+NodeBatch generation:  5.245208740234375e-06
+func(nbatch):  0.00030732154846191406
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021600723266601562
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3828277587890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0517578125e-05
+eid_bkt generation:  0.0002510547637939453
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.811981201171875e-05
+msgdata_bkt generation:  0.00026917457580566406
+msgdata_bkt for loop:  8.845329284667969e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.00030350685119628906
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021982192993164062
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4781951904296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.075599670410156e-05
+eid_bkt generation:  0.00025582313537597656
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.00027489662170410156
+msgdata_bkt for loop:  9.131431579589844e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0003387928009033203
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002129077911376953
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4066696166992188e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002491474151611328
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002675056457519531
+msgdata_bkt for loop:  9.131431579589844e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.00037670135498046875
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021409988403320312
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.430511474609375e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0279159545898438e-05
+eid_bkt generation:  0.0002498626708984375
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9311904907226562e-05
+msgdata_bkt generation:  0.00026917457580566406
+msgdata_bkt for loop:  9.250640869140625e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0004279613494873047
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021767616271972656
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5735626220703125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.956390380859375e-05
+eid_bkt generation:  0.0002543926239013672
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002727508544921875
+msgdata_bkt for loop:  9.417533874511719e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0004684925079345703
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021767616271972656
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  2.86102294921875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.33514404296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.123283386230469e-05
+eid_bkt generation:  0.0002522468566894531
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.0002713203430175781
+msgdata_bkt for loop:  9.393692016601562e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0005109310150146484
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022125244140625
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.3365020751953125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0994415283203125e-05
+eid_bkt generation:  0.0002655982971191406
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00028443336486816406
+msgdata_bkt for loop:  9.72747802734375e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0005440711975097656
+----NodeBatch generation time:  0.007961273193359375
+----Frame generation time:  1.0013580322265625e-05
+---- merge nodes time:  0.00015687942504882812
+invoke_udf_reduce time:  0.09371232986450195
+preparing time:  0.021626710891723633
+model forward time:  0.09467697143554688
+loss calculation time:  6.532669067382812e-05
+partial loss calculation time:  0.001007080078125
+loss backward time:  0.017160654067993164
+
+current graph nodes  848190
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001785755157470703
+nodes = graph.dstnodes() time :  4.315376281738281e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  5.0067901611328125e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.000255584716796875
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08469223976135254
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.000110626220703125
+tmp = F.gather_row(idx, eqidx)  3.0040740966796875e-05
+N = math.ceil(len(tmp)/num_split)  1.33514404296875e-05
+unique_val = np.asarray(list([degree.item()]))  3.361701965332031e-05
+step:  0
+bucketing time:  0.0854182243347168
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007541179656982422
+assert len(eid_bkt) == deg * len(node_bkt):  1.6927719116210938e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.245208740234375e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0004253387451171875
+ndata_bkt = dstdata.subframe(node_bkt):  5.14984130859375e-05
+eid_bkt generation:  0.0012197494506835938
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.528594970703125e-05
+msgdata_bkt generation:  0.001255035400390625
+msgdata_bkt for loop:  0.0006253719329833984
+NodeBatch generation:  5.0067901611328125e-06
+func(nbatch):  0.0008525848388671875
+----NodeBatch generation time:  0.002920389175415039
+----Frame generation time:  1.52587890625e-05
+---- merge nodes time:  0.00018930435180664062
+invoke_udf_reduce time:  0.08900094032287598
+
+current graph nodes  848190
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001544952392578125
+nodes = graph.dstnodes() time :  2.9087066650390625e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021123886108398438
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08395838737487793
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0001087188720703125
+tmp = F.gather_row(idx, eqidx)  2.956390380859375e-05
+N = math.ceil(len(tmp)/num_split)  1.1205673217773438e-05
+unique_val = np.asarray(list([degree.item()]))  3.218650817871094e-05
+step:  1
+bucketing time:  0.08467650413513184
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008249282836914062
+assert len(eid_bkt) == deg * len(node_bkt):  1.811981201171875e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.4836273193359375e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00029754638671875
+ndata_bkt = dstdata.subframe(node_bkt):  6.151199340820312e-05
+eid_bkt generation:  0.0011644363403320312
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.62396240234375e-05
+msgdata_bkt generation:  0.0012006759643554688
+msgdata_bkt for loop:  0.00061798095703125
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008270740509033203
+----NodeBatch generation time:  0.0027794837951660156
+----Frame generation time:  1.239776611328125e-05
+---- merge nodes time:  0.0001652240753173828
+invoke_udf_reduce time:  0.0880281925201416
+
+current graph nodes  848190
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00016045570373535156
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021648406982421875
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08422422409057617
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011467933654785156
+tmp = F.gather_row(idx, eqidx)  3.0040740966796875e-05
+N = math.ceil(len(tmp)/num_split)  1.2636184692382812e-05
+unique_val = np.asarray(list([degree.item()]))  3.3855438232421875e-05
+step:  2
+bucketing time:  0.08495855331420898
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008261203765869141
+assert len(eid_bkt) == deg * len(node_bkt):  1.7404556274414062e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00029969215393066406
+ndata_bkt = dstdata.subframe(node_bkt):  5.2928924560546875e-05
+eid_bkt generation:  0.0011665821075439453
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.719329833984375e-05
+msgdata_bkt generation:  0.001203775405883789
+msgdata_bkt for loop:  0.0006256103515625
+NodeBatch generation:  4.5299530029296875e-06
+func(nbatch):  0.0008342266082763672
+----NodeBatch generation time:  0.0027909278869628906
+----Frame generation time:  1.1205673217773438e-05
+---- merge nodes time:  0.0001659393310546875
+invoke_udf_reduce time:  0.08833193778991699
+
+current graph nodes  848190
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.000164031982421875
+nodes = graph.dstnodes() time :  2.765655517578125e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.6226043701171875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021839141845703125
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08462285995483398
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011181831359863281
+tmp = F.gather_row(idx, eqidx)  2.9325485229492188e-05
+N = math.ceil(len(tmp)/num_split)  1.0967254638671875e-05
+unique_val = np.asarray(list([degree.item()]))  3.361701965332031e-05
+step:  3
+bucketing time:  0.0853581428527832
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.000751495361328125
+assert len(eid_bkt) == deg * len(node_bkt):  1.6689300537109375e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00042057037353515625
+ndata_bkt = dstdata.subframe(node_bkt):  5.125999450683594e-05
+eid_bkt generation:  0.0012142658233642578
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.933906555175781e-05
+msgdata_bkt generation:  0.0012536048889160156
+msgdata_bkt for loop:  0.0006284713745117188
+NodeBatch generation:  5.0067901611328125e-06
+func(nbatch):  0.0008332729339599609
+----NodeBatch generation time:  0.0028409957885742188
+----Frame generation time:  1.33514404296875e-05
+---- merge nodes time:  0.00016927719116210938
+invoke_udf_reduce time:  0.08878803253173828
+split  buckets total input  1441822
+preparing time:  0.08114171028137207
+model forward time :  0.35828685760498047
+model forward time + loss calculation time:  0.35871434211730957
+loss backward time:  0.014208316802978516
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.5354)
+
+pure train time 0.48482561111450195
+EPOCH:  5
+full batch graph loading time:  0.05164051055908203
+group buckets input  18164
+
+current graph nodes  848325
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.00016689300537109375
+nodes = graph.dstnodes() time :  2.8848648071289062e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.291534423828125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00022554397583007812
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.07747554779052734
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0006754398345947266
+bucketing time:  0.07866859436035156
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0003509521484375
+assert len(eid_bkt) == deg * len(node_bkt):  1.0251998901367188e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.5272369384765625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.0067901611328125e-05
+eid_bkt generation:  0.0004100799560546875
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.6226043701171875e-05
+msgdata_bkt generation:  0.0004363059997558594
+msgdata_bkt for loop:  0.0001323223114013672
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0003638267517089844
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002605915069580078
+assert len(eid_bkt) == deg * len(node_bkt):  7.3909759521484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.5762786865234375e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.8835067749023438e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.504753112792969e-05
+eid_bkt generation:  0.0003018379211425781
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.09808349609375e-05
+msgdata_bkt generation:  0.0003228187561035156
+msgdata_bkt for loop:  0.00010800361633300781
+NodeBatch generation:  5.7220458984375e-06
+func(nbatch):  0.00029087066650390625
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021886825561523438
+assert len(eid_bkt) == deg * len(node_bkt):  5.9604644775390625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3113021850585938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002522468566894531
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00027108192443847656
+msgdata_bkt for loop:  9.131431579589844e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0002944469451904297
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002288818359375
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.2411346435546875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.218650817871094e-05
+eid_bkt generation:  0.00027298927307128906
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9550323486328125e-05
+msgdata_bkt generation:  0.0002925395965576172
+msgdata_bkt for loop:  9.369850158691406e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.00036787986755371094
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021839141845703125
+assert len(eid_bkt) == deg * len(node_bkt):  6.198883056640625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.430511474609375e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.075599670410156e-05
+eid_bkt generation:  0.0002541542053222656
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9311904907226562e-05
+msgdata_bkt generation:  0.0002734661102294922
+msgdata_bkt for loop:  9.1552734375e-05
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.00037980079650878906
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021791458129882812
+assert len(eid_bkt) == deg * len(node_bkt):  6.198883056640625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.430511474609375e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9802322387695312e-05
+eid_bkt generation:  0.00025343894958496094
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002722740173339844
+msgdata_bkt for loop:  9.107589721679688e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0004253387451171875
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021886825561523438
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.621246337890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0994415283203125e-05
+eid_bkt generation:  0.0002562999725341797
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.0002753734588623047
+msgdata_bkt for loop:  9.393692016601562e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0004658699035644531
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021648406982421875
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4781951904296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0279159545898438e-05
+eid_bkt generation:  0.00025177001953125
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9311904907226562e-05
+msgdata_bkt generation:  0.00027108192443847656
+msgdata_bkt for loop:  9.441375732421875e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0004975795745849609
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022149085998535156
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.765655517578125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.075599670410156e-05
+eid_bkt generation:  0.0002703666687011719
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002892017364501953
+msgdata_bkt for loop:  9.655952453613281e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0005428791046142578
+----NodeBatch generation time:  0.008036136627197266
+----Frame generation time:  1.0728836059570312e-05
+---- merge nodes time:  0.00015783309936523438
+invoke_udf_reduce time:  0.09275674819946289
+preparing time:  0.020417213439941406
+model forward time:  0.0937192440032959
+loss calculation time:  6.4849853515625e-05
+partial loss calculation time:  0.0010187625885009766
+loss backward time:  0.009341955184936523
+
+current graph nodes  848325
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00012040138244628906
+nodes = graph.dstnodes() time :  2.765655517578125e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.00017118453979492188
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08498382568359375
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011348724365234375
+tmp = F.gather_row(idx, eqidx)  2.9325485229492188e-05
+N = math.ceil(len(tmp)/num_split)  1.2159347534179688e-05
+unique_val = np.asarray(list([degree.item()]))  3.2901763916015625e-05
+step:  0
+bucketing time:  0.08571600914001465
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007464885711669922
+assert len(eid_bkt) == deg * len(node_bkt):  1.5735626220703125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0003085136413574219
+ndata_bkt = dstdata.subframe(node_bkt):  5.078315734863281e-05
+eid_bkt generation:  0.0010919570922851562
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.3855438232421875e-05
+msgdata_bkt generation:  0.0011258125305175781
+msgdata_bkt for loop:  0.0006582736968994141
+NodeBatch generation:  4.76837158203125e-06
+func(nbatch):  0.0009188652038574219
+----NodeBatch generation time:  0.0028243064880371094
+----Frame generation time:  1.4066696166992188e-05
+---- merge nodes time:  0.00015974044799804688
+invoke_udf_reduce time:  0.08903908729553223
+
+current graph nodes  848325
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015616416931152344
+nodes = graph.dstnodes() time :  2.7418136596679688e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002110004425048828
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08433985710144043
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011038780212402344
+tmp = F.gather_row(idx, eqidx)  2.9325485229492188e-05
+N = math.ceil(len(tmp)/num_split)  1.049041748046875e-05
+unique_val = np.asarray(list([degree.item()]))  3.314018249511719e-05
+step:  1
+bucketing time:  0.08506274223327637
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007429122924804688
+assert len(eid_bkt) == deg * len(node_bkt):  1.6927719116210938e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.67572021484375e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002923011779785156
+ndata_bkt = dstdata.subframe(node_bkt):  5.269050598144531e-05
+eid_bkt generation:  0.0010755062103271484
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.600120544433594e-05
+msgdata_bkt generation:  0.0011115074157714844
+msgdata_bkt for loop:  0.0006186962127685547
+NodeBatch generation:  4.76837158203125e-06
+func(nbatch):  0.0008535385131835938
+----NodeBatch generation time:  0.0027060508728027344
+----Frame generation time:  1.4543533325195312e-05
+---- merge nodes time:  0.0001628398895263672
+invoke_udf_reduce time:  0.08833599090576172
+
+current graph nodes  848325
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001556873321533203
+nodes = graph.dstnodes() time :  2.7418136596679688e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.337860107421875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021004676818847656
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08509683609008789
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010895729064941406
+tmp = F.gather_row(idx, eqidx)  2.8371810913085938e-05
+N = math.ceil(len(tmp)/num_split)  1.1920928955078125e-05
+unique_val = np.asarray(list([degree.item()]))  3.266334533691406e-05
+step:  2
+bucketing time:  0.0858154296875
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007472038269042969
+assert len(eid_bkt) == deg * len(node_bkt):  1.621246337890625e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0003025531768798828
+ndata_bkt = dstdata.subframe(node_bkt):  5.269050598144531e-05
+eid_bkt generation:  0.0010879039764404297
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.552436828613281e-05
+msgdata_bkt generation:  0.0011234283447265625
+msgdata_bkt for loop:  0.0006153583526611328
+NodeBatch generation:  4.76837158203125e-06
+func(nbatch):  0.0008335113525390625
+----NodeBatch generation time:  0.002700328826904297
+----Frame generation time:  1.1682510375976562e-05
+---- merge nodes time:  0.00016546249389648438
+invoke_udf_reduce time:  0.0891563892364502
+
+current graph nodes  848325
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015974044799804688
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021576881408691406
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08506011962890625
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010657310485839844
+tmp = F.gather_row(idx, eqidx)  2.956390380859375e-05
+N = math.ceil(len(tmp)/num_split)  1.1682510375976562e-05
+unique_val = np.asarray(list([degree.item()]))  3.361701965332031e-05
+step:  3
+bucketing time:  0.08577799797058105
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007369518280029297
+assert len(eid_bkt) == deg * len(node_bkt):  1.71661376953125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002808570861816406
+ndata_bkt = dstdata.subframe(node_bkt):  4.9591064453125e-05
+eid_bkt generation:  0.0010573863983154297
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.647804260253906e-05
+msgdata_bkt generation:  0.0010938644409179688
+msgdata_bkt for loop:  0.0006244182586669922
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008349418640136719
+----NodeBatch generation time:  0.002674579620361328
+----Frame generation time:  1.239776611328125e-05
+---- merge nodes time:  0.00016188621520996094
+invoke_udf_reduce time:  0.08902740478515625
+split  buckets total input  1442597
+preparing time:  0.08077788352966309
+model forward time :  0.35950183868408203
+model forward time + loss calculation time:  0.35994482040405273
+loss backward time:  0.017157316207885742
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.4706)
+
+pure train time 0.4802281856536865
+EPOCH:  6
+full batch graph loading time:  0.041126251220703125
+group buckets input  18164
+
+current graph nodes  847553
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.00016450881958007812
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.76837158203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00022268295288085938
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.07912158966064453
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0006635189056396484
+bucketing time:  0.08030009269714355
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00035643577575683594
+assert len(eid_bkt) == deg * len(node_bkt):  1.2874603271484375e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.574920654296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.14984130859375e-05
+eid_bkt generation:  0.0004227161407470703
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.7894973754882812e-05
+msgdata_bkt generation:  0.0004506111145019531
+msgdata_bkt for loop:  0.0001354217529296875
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0003707408905029297
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00025463104248046875
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.8358230590820312e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.62396240234375e-05
+eid_bkt generation:  0.0002961158752441406
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.09808349609375e-05
+msgdata_bkt generation:  0.0003170967102050781
+msgdata_bkt for loop:  0.00010657310485839844
+NodeBatch generation:  5.245208740234375e-06
+func(nbatch):  0.00030422210693359375
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002300739288330078
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  2.86102294921875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3113021850585938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.956390380859375e-05
+eid_bkt generation:  0.00026416778564453125
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.00028324127197265625
+msgdata_bkt for loop:  9.274482727050781e-05
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.000293731689453125
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021648406982421875
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3589859008789062e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0517578125e-05
+eid_bkt generation:  0.0002503395080566406
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.00026869773864746094
+msgdata_bkt for loop:  9.250640869140625e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0003390312194824219
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021314620971679688
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4066696166992188e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.000247955322265625
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8596649169921875e-05
+msgdata_bkt generation:  0.0002665519714355469
+msgdata_bkt for loop:  9.298324584960938e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.000377655029296875
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002148151397705078
+assert len(eid_bkt) == deg * len(node_bkt):  5.9604644775390625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  2.86102294921875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.52587890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9802322387695312e-05
+eid_bkt generation:  0.0002505779266357422
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.811981201171875e-05
+msgdata_bkt generation:  0.00026869773864746094
+msgdata_bkt for loop:  9.417533874511719e-05
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0004246234893798828
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021791458129882812
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5974044799804688e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9325485229492188e-05
+eid_bkt generation:  0.0003159046173095703
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.2411346435546875e-05
+msgdata_bkt generation:  0.0003383159637451172
+msgdata_bkt for loop:  0.0001049041748046875
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0005097389221191406
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021719932556152344
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5020370483398438e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.147125244140625e-05
+eid_bkt generation:  0.00025343894958496094
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.002716064453125e-05
+msgdata_bkt generation:  0.0002734661102294922
+msgdata_bkt for loop:  9.465217590332031e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0004940032958984375
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022172927856445312
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.621246337890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9802322387695312e-05
+eid_bkt generation:  0.0002613067626953125
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00028014183044433594
+msgdata_bkt for loop:  9.72747802734375e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0005552768707275391
+----NodeBatch generation time:  0.008069515228271484
+----Frame generation time:  1.0728836059570312e-05
+---- merge nodes time:  0.00015783309936523438
+invoke_udf_reduce time:  0.09444785118103027
+preparing time:  0.02028489112854004
+model forward time:  0.09540867805480957
+loss calculation time:  6.628036499023438e-05
+partial loss calculation time:  0.0009989738464355469
+loss backward time:  0.008745670318603516
+
+current graph nodes  847553
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00012087821960449219
+nodes = graph.dstnodes() time :  2.6941299438476562e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00016999244689941406
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.0854029655456543
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011301040649414062
+tmp = F.gather_row(idx, eqidx)  2.9325485229492188e-05
+N = math.ceil(len(tmp)/num_split)  1.1444091796875e-05
+unique_val = np.asarray(list([degree.item()]))  3.266334533691406e-05
+step:  0
+bucketing time:  0.08613038063049316
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007472038269042969
+assert len(eid_bkt) == deg * len(node_bkt):  1.621246337890625e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0004229545593261719
+ndata_bkt = dstdata.subframe(node_bkt):  5.0067901611328125e-05
+eid_bkt generation:  0.0012094974517822266
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.790855407714844e-05
+msgdata_bkt generation:  0.001247406005859375
+msgdata_bkt for loop:  0.0006287097930908203
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008530616760253906
+----NodeBatch generation time:  0.002851724624633789
+----Frame generation time:  1.2159347534179688e-05
+---- merge nodes time:  0.0001652240753173828
+invoke_udf_reduce time:  0.08948588371276855
+
+current graph nodes  847553
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00016188621520996094
+nodes = graph.dstnodes() time :  2.8848648071289062e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002186298370361328
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08563780784606934
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011110305786132812
+tmp = F.gather_row(idx, eqidx)  2.86102294921875e-05
+N = math.ceil(len(tmp)/num_split)  1.239776611328125e-05
+unique_val = np.asarray(list([degree.item()]))  3.218650817871094e-05
+step:  1
+bucketing time:  0.08636260032653809
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008227825164794922
+assert len(eid_bkt) == deg * len(node_bkt):  1.8358230590820312e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0003075599670410156
+ndata_bkt = dstdata.subframe(node_bkt):  5.030632019042969e-05
+eid_bkt generation:  0.0011715888977050781
+msgdata_bkt = msgdata.subframe(eid_bkt):  4.029273986816406e-05
+msgdata_bkt generation:  0.0012118816375732422
+msgdata_bkt for loop:  0.00063323974609375
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008440017700195312
+----NodeBatch generation time:  0.0028133392333984375
+----Frame generation time:  1.3113021850585938e-05
+---- merge nodes time:  0.0001685619354248047
+invoke_udf_reduce time:  0.08976221084594727
+
+current graph nodes  847553
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001571178436279297
+nodes = graph.dstnodes() time :  2.86102294921875e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.0002186298370361328
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08658123016357422
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011014938354492188
+tmp = F.gather_row(idx, eqidx)  2.8371810913085938e-05
+N = math.ceil(len(tmp)/num_split)  1.1444091796875e-05
+unique_val = np.asarray(list([degree.item()]))  3.2901763916015625e-05
+step:  2
+bucketing time:  0.08729910850524902
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008270740509033203
+assert len(eid_bkt) == deg * len(node_bkt):  1.7881393432617188e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  7.152557373046875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00029659271240234375
+ndata_bkt = dstdata.subframe(node_bkt):  5.078315734863281e-05
+eid_bkt generation:  0.0011677742004394531
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.743171691894531e-05
+msgdata_bkt generation:  0.0012052059173583984
+msgdata_bkt for loop:  0.0006260871887207031
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0008339881896972656
+----NodeBatch generation time:  0.0027832984924316406
+----Frame generation time:  1.1682510375976562e-05
+---- merge nodes time:  0.0001652240753173828
+invoke_udf_reduce time:  0.09066009521484375
+
+current graph nodes  847553
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00016617774963378906
+nodes = graph.dstnodes() time :  2.8133392333984375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002276897430419922
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08636903762817383
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011157989501953125
+tmp = F.gather_row(idx, eqidx)  3.0994415283203125e-05
+N = math.ceil(len(tmp)/num_split)  1.1444091796875e-05
+unique_val = np.asarray(list([degree.item()]))  3.218650817871094e-05
+step:  3
+bucketing time:  0.08708977699279785
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007452964782714844
+assert len(eid_bkt) == deg * len(node_bkt):  1.52587890625e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0004277229309082031
+ndata_bkt = dstdata.subframe(node_bkt):  5.14984130859375e-05
+eid_bkt generation:  0.0012857913970947266
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.7670135498046875e-05
+msgdata_bkt generation:  0.0013234615325927734
+msgdata_bkt for loop:  0.0006518363952636719
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008535385131835938
+----NodeBatch generation time:  0.0029511451721191406
+----Frame generation time:  1.4066696166992188e-05
+---- merge nodes time:  0.0001659393310546875
+invoke_udf_reduce time:  0.0906364917755127
+split  buckets total input  1441226
+preparing time:  0.08072257041931152
+model forward time :  0.36450695991516113
+model forward time + loss calculation time:  0.36493849754333496
+loss backward time:  0.017080307006835938
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.4048)
+
+pure train time 0.4862394332885742
+EPOCH:  7
+full batch graph loading time:  0.0397028923034668
+group buckets input  18164
+
+current graph nodes  848583
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.00015401840209960938
+nodes = graph.dstnodes() time :  2.5987625122070312e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.5762786865234375e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00020551681518554688
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.07906818389892578
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0006997585296630859
+bucketing time:  0.08032870292663574
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00034928321838378906
+assert len(eid_bkt) == deg * len(node_bkt):  1.1682510375976562e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.67572021484375e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.6941299438476562e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.078315734863281e-05
+eid_bkt generation:  0.00041556358337402344
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.6226043701171875e-05
+msgdata_bkt generation:  0.0004417896270751953
+msgdata_bkt for loop:  0.00013446807861328125
+NodeBatch generation:  5.0067901611328125e-06
+func(nbatch):  0.0003788471221923828
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002722740173339844
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  4.291534423828125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.9550323486328125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.695487976074219e-05
+eid_bkt generation:  0.00031447410583496094
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.002716064453125e-05
+msgdata_bkt generation:  0.0003345012664794922
+msgdata_bkt for loop:  0.0001087188720703125
+NodeBatch generation:  5.4836273193359375e-06
+func(nbatch):  0.00030922889709472656
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021648406982421875
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4066696166992188e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002524852752685547
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002713203430175781
+msgdata_bkt for loop:  9.34600830078125e-05
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0003027915954589844
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022268295288085938
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3828277587890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9087066650390625e-05
+eid_bkt generation:  0.0002589225769042969
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002772808074951172
+msgdata_bkt for loop:  9.465217590332031e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.00034117698669433594
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002148151397705078
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4543533325195312e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9325485229492188e-05
+eid_bkt generation:  0.00025177001953125
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00027060508728027344
+msgdata_bkt for loop:  9.417533874511719e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.00037789344787597656
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021338462829589844
+assert len(eid_bkt) == deg * len(node_bkt):  5.9604644775390625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.430511474609375e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.956390380859375e-05
+eid_bkt generation:  0.0002491474151611328
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8596649169921875e-05
+msgdata_bkt generation:  0.0002677440643310547
+msgdata_bkt for loop:  9.489059448242188e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00042724609375
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021529197692871094
+assert len(eid_bkt) == deg * len(node_bkt):  6.198883056640625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.193450927734375e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0517578125e-05
+eid_bkt generation:  0.0002601146697998047
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9788742065429688e-05
+msgdata_bkt generation:  0.0002799034118652344
+msgdata_bkt for loop:  9.679794311523438e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0004661083221435547
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021576881408691406
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.33514404296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002498626708984375
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002682209014892578
+msgdata_bkt for loop:  9.608268737792969e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0004985332489013672
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022077560424804688
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  2.86102294921875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.621246337890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0517578125e-05
+eid_bkt generation:  0.0002570152282714844
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002758502960205078
+msgdata_bkt for loop:  9.894371032714844e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0005435943603515625
+----NodeBatch generation time:  0.00798940658569336
+----Frame generation time:  1.0251998901367188e-05
+---- merge nodes time:  0.0001583099365234375
+invoke_udf_reduce time:  0.09435153007507324
+preparing time:  0.02648472785949707
+model forward time:  0.09531188011169434
+loss calculation time:  6.461143493652344e-05
+partial loss calculation time:  0.0010037422180175781
+loss backward time:  0.007863521575927734
+
+current graph nodes  848583
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00014662742614746094
+nodes = graph.dstnodes() time :  3.62396240234375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.0531158447265625e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.0002110004425048828
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.0854635238647461
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011324882507324219
+tmp = F.gather_row(idx, eqidx)  3.0279159545898438e-05
+N = math.ceil(len(tmp)/num_split)  1.1920928955078125e-05
+unique_val = np.asarray(list([degree.item()]))  3.504753112792969e-05
+step:  0
+bucketing time:  0.08619308471679688
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007526874542236328
+assert len(eid_bkt) == deg * len(node_bkt):  1.5735626220703125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00029015541076660156
+ndata_bkt = dstdata.subframe(node_bkt):  5.221366882324219e-05
+eid_bkt generation:  0.0010814666748046875
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.647804260253906e-05
+msgdata_bkt generation:  0.0011179447174072266
+msgdata_bkt for loop:  0.0006196498870849609
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008394718170166016
+----NodeBatch generation time:  0.0027022361755371094
+----Frame generation time:  1.1444091796875e-05
+---- merge nodes time:  0.00017023086547851562
+invoke_udf_reduce time:  0.08944416046142578
+
+current graph nodes  848583
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00016117095947265625
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021648406982421875
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08600568771362305
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010967254638671875
+tmp = F.gather_row(idx, eqidx)  2.956390380859375e-05
+N = math.ceil(len(tmp)/num_split)  1.1444091796875e-05
+unique_val = np.asarray(list([degree.item()]))  3.2901763916015625e-05
+step:  1
+bucketing time:  0.08673381805419922
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007650852203369141
+assert len(eid_bkt) == deg * len(node_bkt):  1.811981201171875e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00031375885009765625
+ndata_bkt = dstdata.subframe(node_bkt):  5.054473876953125e-05
+eid_bkt generation:  0.0011229515075683594
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.695487976074219e-05
+msgdata_bkt generation:  0.0011599063873291016
+msgdata_bkt for loop:  0.0006506443023681641
+NodeBatch generation:  5.0067901611328125e-06
+func(nbatch):  0.00084686279296875
+----NodeBatch generation time:  0.002778291702270508
+----Frame generation time:  1.239776611328125e-05
+---- merge nodes time:  0.00017523765563964844
+invoke_udf_reduce time:  0.09010648727416992
+
+current graph nodes  848583
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001647472381591797
+nodes = graph.dstnodes() time :  2.8848648071289062e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.6226043701171875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00022149085998535156
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08752703666687012
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010895729064941406
+tmp = F.gather_row(idx, eqidx)  2.9087066650390625e-05
+N = math.ceil(len(tmp)/num_split)  1.1920928955078125e-05
+unique_val = np.asarray(list([degree.item()]))  3.170967102050781e-05
+step:  2
+bucketing time:  0.08824467658996582
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007500648498535156
+assert len(eid_bkt) == deg * len(node_bkt):  1.8596649169921875e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002913475036621094
+ndata_bkt = dstdata.subframe(node_bkt):  5.054473876953125e-05
+eid_bkt generation:  0.0010838508605957031
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.5762786865234375e-05
+msgdata_bkt generation:  0.0011196136474609375
+msgdata_bkt for loop:  0.0006380081176757812
+NodeBatch generation:  4.76837158203125e-06
+func(nbatch):  0.0008387565612792969
+----NodeBatch generation time:  0.0027227401733398438
+----Frame generation time:  1.1920928955078125e-05
+---- merge nodes time:  0.0001709461212158203
+invoke_udf_reduce time:  0.09156394004821777
+
+current graph nodes  848583
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001621246337890625
+nodes = graph.dstnodes() time :  2.86102294921875e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021767616271972656
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08956456184387207
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011777877807617188
+tmp = F.gather_row(idx, eqidx)  2.9325485229492188e-05
+N = math.ceil(len(tmp)/num_split)  1.1920928955078125e-05
+unique_val = np.asarray(list([degree.item()]))  3.2901763916015625e-05
+step:  3
+bucketing time:  0.09029412269592285
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007452964782714844
+assert len(eid_bkt) == deg * len(node_bkt):  1.6689300537109375e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.67572021484375e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002818107604980469
+ndata_bkt = dstdata.subframe(node_bkt):  5.173683166503906e-05
+eid_bkt generation:  0.0010666847229003906
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.8623809814453125e-05
+msgdata_bkt generation:  0.0011053085327148438
+msgdata_bkt for loop:  0.0006182193756103516
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008358955383300781
+----NodeBatch generation time:  0.0026869773864746094
+----Frame generation time:  1.239776611328125e-05
+---- merge nodes time:  0.00016641616821289062
+invoke_udf_reduce time:  0.09356260299682617
+split  buckets total input  1441628
+preparing time:  0.08459234237670898
+model forward time :  0.3685746192932129
+model forward time + loss calculation time:  0.3690192699432373
+loss backward time:  0.01852703094482422
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.3381)
+
+pure train time 0.4907863140106201
+EPOCH:  8
+full batch graph loading time:  0.05572628974914551
+group buckets input  18164
+
+current graph nodes  848110
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.00017380714416503906
+nodes = graph.dstnodes() time :  2.9802322387695312e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.0531158447265625e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.00023365020751953125
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08009982109069824
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0007045269012451172
+bucketing time:  0.08135843276977539
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00035881996154785156
+assert len(eid_bkt) == deg * len(node_bkt):  1.0967254638671875e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  9.5367431640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  3.170967102050781e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.125999450683594e-05
+eid_bkt generation:  0.0005223751068115234
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.457069396972656e-05
+msgdata_bkt generation:  0.00055694580078125
+msgdata_bkt for loop:  0.00016808509826660156
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.000461578369140625
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00026869773864746094
+assert len(eid_bkt) == deg * len(node_bkt):  7.3909759521484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.814697265625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.1457672119140625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.7670135498046875e-05
+eid_bkt generation:  0.0003178119659423828
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.1457672119140625e-05
+msgdata_bkt generation:  0.00033926963806152344
+msgdata_bkt for loop:  0.00010633468627929688
+NodeBatch generation:  5.7220458984375e-06
+func(nbatch):  0.00029778480529785156
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022745132446289062
+assert len(eid_bkt) == deg * len(node_bkt):  6.198883056640625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  2.86102294921875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3589859008789062e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.075599670410156e-05
+eid_bkt generation:  0.0002624988555908203
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8596649169921875e-05
+msgdata_bkt generation:  0.0002810955047607422
+msgdata_bkt for loop:  8.988380432128906e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00029087066650390625
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002205371856689453
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.0742416381835938e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0517578125e-05
+eid_bkt generation:  0.00026226043701171875
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9311904907226562e-05
+msgdata_bkt generation:  0.0002815723419189453
+msgdata_bkt for loop:  9.107589721679688e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00033283233642578125
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021147727966308594
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  2.86102294921875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.2636184692382812e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0517578125e-05
+eid_bkt generation:  0.0002446174621582031
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8596649169921875e-05
+msgdata_bkt generation:  0.000263214111328125
+msgdata_bkt for loop:  8.916854858398438e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00037360191345214844
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021386146545410156
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4543533325195312e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0517578125e-05
+eid_bkt generation:  0.0002512931823730469
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9311904907226562e-05
+msgdata_bkt generation:  0.00027060508728027344
+msgdata_bkt for loop:  9.250640869140625e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00042247772216796875
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.000217437744140625
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5735626220703125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002536773681640625
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.00027251243591308594
+msgdata_bkt for loop:  9.417533874511719e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00045800209045410156
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021457672119140625
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3589859008789062e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0279159545898438e-05
+eid_bkt generation:  0.00024962425231933594
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.00026798248291015625
+msgdata_bkt for loop:  9.369850158691406e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0004978179931640625
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022673606872558594
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.621246337890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002636909484863281
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8596649169921875e-05
+msgdata_bkt generation:  0.00028228759765625
+msgdata_bkt for loop:  9.632110595703125e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0005395412445068359
+----NodeBatch generation time:  0.008165597915649414
+----Frame generation time:  1.0013580322265625e-05
+---- merge nodes time:  0.0001735687255859375
+invoke_udf_reduce time:  0.09561419486999512
+preparing time:  0.020696401596069336
+model forward time:  0.09702634811401367
+loss calculation time:  9.465217590332031e-05
+partial loss calculation time:  0.0009362697601318359
+loss backward time:  0.009059667587280273
+
+current graph nodes  848110
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00013589859008789062
+nodes = graph.dstnodes() time :  3.075599670410156e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.5762786865234375e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00019168853759765625
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.0859689712524414
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010919570922851562
+tmp = F.gather_row(idx, eqidx)  3.0517578125e-05
+N = math.ceil(len(tmp)/num_split)  1.1920928955078125e-05
+unique_val = np.asarray(list([degree.item()]))  4.5299530029296875e-05
+step:  0
+bucketing time:  0.0866994857788086
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008184909820556641
+assert len(eid_bkt) == deg * len(node_bkt):  1.7881393432617188e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00043773651123046875
+ndata_bkt = dstdata.subframe(node_bkt):  5.173683166503906e-05
+eid_bkt generation:  0.0012998580932617188
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.9577484130859375e-05
+msgdata_bkt generation:  0.0013394355773925781
+msgdata_bkt for loop:  0.0006372928619384766
+NodeBatch generation:  4.76837158203125e-06
+func(nbatch):  0.0008625984191894531
+----NodeBatch generation time:  0.002964019775390625
+----Frame generation time:  1.1920928955078125e-05
+---- merge nodes time:  0.0001652240753173828
+invoke_udf_reduce time:  0.09020090103149414
+
+current graph nodes  848110
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015687942504882812
+nodes = graph.dstnodes() time :  2.8133392333984375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.0002129077911376953
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08667325973510742
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010991096496582031
+tmp = F.gather_row(idx, eqidx)  2.8133392333984375e-05
+N = math.ceil(len(tmp)/num_split)  1.1682510375976562e-05
+unique_val = np.asarray(list([degree.item()]))  3.409385681152344e-05
+step:  1
+bucketing time:  0.08745551109313965
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008218288421630859
+assert len(eid_bkt) == deg * len(node_bkt):  1.6927719116210938e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0004286766052246094
+ndata_bkt = dstdata.subframe(node_bkt):  5.245208740234375e-05
+eid_bkt generation:  0.0012929439544677734
+msgdata_bkt = msgdata.subframe(eid_bkt):  4.076957702636719e-05
+msgdata_bkt generation:  0.0013337135314941406
+msgdata_bkt for loop:  0.0006363391876220703
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008292198181152344
+----NodeBatch generation time:  0.002925395965576172
+----Frame generation time:  1.33514404296875e-05
+---- merge nodes time:  0.0001659393310546875
+invoke_udf_reduce time:  0.09096026420593262
+
+current graph nodes  848110
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015473365783691406
+nodes = graph.dstnodes() time :  2.7418136596679688e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00020813941955566406
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08700013160705566
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011110305786132812
+tmp = F.gather_row(idx, eqidx)  2.9087066650390625e-05
+N = math.ceil(len(tmp)/num_split)  1.239776611328125e-05
+unique_val = np.asarray(list([degree.item()]))  3.314018249511719e-05
+step:  2
+bucketing time:  0.08772873878479004
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008294582366943359
+assert len(eid_bkt) == deg * len(node_bkt):  1.9550323486328125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00042057037353515625
+ndata_bkt = dstdata.subframe(node_bkt):  5.173683166503906e-05
+eid_bkt generation:  0.0012946128845214844
+msgdata_bkt = msgdata.subframe(eid_bkt):  4.00543212890625e-05
+msgdata_bkt generation:  0.0013346672058105469
+msgdata_bkt for loop:  0.0006368160247802734
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008394718170166016
+----NodeBatch generation time:  0.002935647964477539
+----Frame generation time:  1.1444091796875e-05
+---- merge nodes time:  0.00016760826110839844
+invoke_udf_reduce time:  0.09123778343200684
+
+current graph nodes  848110
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001614093780517578
+nodes = graph.dstnodes() time :  2.8133392333984375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.0994415283203125e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.00021576881408691406
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08898735046386719
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011324882507324219
+tmp = F.gather_row(idx, eqidx)  3.075599670410156e-05
+N = math.ceil(len(tmp)/num_split)  1.239776611328125e-05
+unique_val = np.asarray(list([degree.item()]))  3.2901763916015625e-05
+step:  3
+bucketing time:  0.08971786499023438
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008306503295898438
+assert len(eid_bkt) == deg * len(node_bkt):  1.811981201171875e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00043129920959472656
+ndata_bkt = dstdata.subframe(node_bkt):  5.173683166503906e-05
+eid_bkt generation:  0.0013077259063720703
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.8623809814453125e-05
+msgdata_bkt generation:  0.0013463497161865234
+msgdata_bkt for loop:  0.0006432533264160156
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008509159088134766
+----NodeBatch generation time:  0.0029630661010742188
+----Frame generation time:  1.3589859008789062e-05
+---- merge nodes time:  0.0001690387725830078
+invoke_udf_reduce time:  0.09326958656311035
+split  buckets total input  1441113
+preparing time:  0.08095216751098633
+model forward time :  0.369661808013916
+model forward time + loss calculation time:  0.3700859546661377
+loss backward time:  0.01564478874206543
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.2706)
+
+pure train time 0.4919114112854004
+EPOCH:  9
+full batch graph loading time:  0.0411534309387207
+group buckets input  18164
+
+current graph nodes  848411
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor([1, 2, 3, 4, 5, 6, 7, 8, 9], device='cuda:0', dtype=torch.int32)
+
+degs = graph.in_degrees() time :  0.00015974044799804688
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  4.0531158447265625e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.0002200603485107422
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08171677589416504
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.0006694793701171875
+bucketing time:  0.08290934562683105
+len node_bkt:  173
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00035762786865234375
+assert len(eid_bkt) == deg * len(node_bkt):  1.1920928955078125e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.9141387939453125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  2.5272369384765625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  5.1975250244140625e-05
+eid_bkt generation:  0.00042510032653808594
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.6226043701171875e-05
+msgdata_bkt generation:  0.0004513263702392578
+msgdata_bkt for loop:  0.000152587890625
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00038909912109375
+len node_bkt:  221
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002574920654296875
+assert len(eid_bkt) == deg * len(node_bkt):  7.152557373046875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.814697265625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.8835067749023438e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.552436828613281e-05
+eid_bkt generation:  0.0002987384796142578
+msgdata_bkt = msgdata.subframe(eid_bkt):  2.002716064453125e-05
+msgdata_bkt generation:  0.00031876564025878906
+msgdata_bkt for loop:  0.00010561943054199219
+NodeBatch generation:  5.245208740234375e-06
+func(nbatch):  0.0003066062927246094
+len node_bkt:  374
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021505355834960938
+assert len(eid_bkt) == deg * len(node_bkt):  6.198883056640625e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4066696166992188e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.9802322387695312e-05
+eid_bkt generation:  0.00024962425231933594
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8835067749023438e-05
+msgdata_bkt generation:  0.0002684593200683594
+msgdata_bkt for loop:  9.870529174804688e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00029349327087402344
+len node_bkt:  456
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021409988403320312
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.3828277587890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0279159545898438e-05
+eid_bkt generation:  0.0002491474151611328
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.0002682209014892578
+msgdata_bkt for loop:  9.250640869140625e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.00034117698669433594
+len node_bkt:  445
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00022339820861816406
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4066696166992188e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.1948089599609375e-05
+eid_bkt generation:  0.00025963783264160156
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9311904907226562e-05
+msgdata_bkt generation:  0.0002789497375488281
+msgdata_bkt for loop:  9.584426879882812e-05
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0004119873046875
+len node_bkt:  550
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021696090698242188
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.0994415283203125e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.4781951904296875e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0040740966796875e-05
+eid_bkt generation:  0.0002536773681640625
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.8358230590820312e-05
+msgdata_bkt generation:  0.0002720355987548828
+msgdata_bkt for loop:  9.34600830078125e-05
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0004239082336425781
+len node_bkt:  655
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021696090698242188
+assert len(eid_bkt) == deg * len(node_bkt):  6.4373016357421875e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.5735626220703125e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.0517578125e-05
+eid_bkt generation:  0.00025343894958496094
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.00027251243591308594
+msgdata_bkt for loop:  9.441375732421875e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.00046706199645996094
+len node_bkt:  512
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0002243518829345703
+assert len(eid_bkt) == deg * len(node_bkt):  6.9141387939453125e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.430511474609375e-05
+ndata_bkt = dstdata.subframe(node_bkt):  2.956390380859375e-05
+eid_bkt generation:  0.00025963783264160156
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.9073486328125e-05
+msgdata_bkt generation:  0.00027871131896972656
+msgdata_bkt for loop:  9.417533874511719e-05
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0004963874816894531
+len node_bkt:  576
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.00021648406982421875
+assert len(eid_bkt) == deg * len(node_bkt):  6.67572021484375e-06
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  3.337860107421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  1.621246337890625e-05
+ndata_bkt = dstdata.subframe(node_bkt):  3.075599670410156e-05
+eid_bkt generation:  0.0002532005310058594
+msgdata_bkt = msgdata.subframe(eid_bkt):  1.811981201171875e-05
+msgdata_bkt generation:  0.0002713203430175781
+msgdata_bkt for loop:  9.512901306152344e-05
+NodeBatch generation:  3.5762786865234375e-06
+func(nbatch):  0.0005428791046142578
+----NodeBatch generation time:  0.008084774017333984
+----Frame generation time:  1.049041748046875e-05
+---- merge nodes time:  0.00017333030700683594
+invoke_udf_reduce time:  0.0970468521118164
+preparing time:  0.020713329315185547
+model forward time:  0.09809565544128418
+loss calculation time:  7.295608520507812e-05
+partial loss calculation time:  0.0009772777557373047
+loss backward time:  0.009788036346435547
+
+current graph nodes  848411
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00012135505676269531
+nodes = graph.dstnodes() time :  2.7894973754882812e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.337860107421875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00017142295837402344
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.0866384506225586
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011277198791503906
+tmp = F.gather_row(idx, eqidx)  2.8133392333984375e-05
+N = math.ceil(len(tmp)/num_split)  1.0967254638671875e-05
+unique_val = np.asarray(list([degree.item()]))  4.410743713378906e-05
+step:  0
+bucketing time:  0.08736228942871094
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007643699645996094
+assert len(eid_bkt) == deg * len(node_bkt):  1.7642974853515625e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  5.9604644775390625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.00027751922607421875
+ndata_bkt = dstdata.subframe(node_bkt):  5.221366882324219e-05
+eid_bkt generation:  0.001081228256225586
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.743171691894531e-05
+msgdata_bkt generation:  0.0011186599731445312
+msgdata_bkt for loop:  0.0006229877471923828
+NodeBatch generation:  5.245208740234375e-06
+func(nbatch):  0.0008389949798583984
+----NodeBatch generation time:  0.002704620361328125
+----Frame generation time:  1.239776611328125e-05
+---- merge nodes time:  0.000164031982421875
+invoke_udf_reduce time:  0.09056758880615234
+
+current graph nodes  848411
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015425682067871094
+nodes = graph.dstnodes() time :  2.8133392333984375e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.337860107421875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00020956993103027344
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08744168281555176
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00010919570922851562
+tmp = F.gather_row(idx, eqidx)  2.7894973754882812e-05
+N = math.ceil(len(tmp)/num_split)  1.2636184692382812e-05
+unique_val = np.asarray(list([degree.item()]))  3.337860107421875e-05
+step:  1
+bucketing time:  0.08815884590148926
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.000835418701171875
+assert len(eid_bkt) == deg * len(node_bkt):  1.7404556274414062e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002980232238769531
+ndata_bkt = dstdata.subframe(node_bkt):  4.982948303222656e-05
+eid_bkt generation:  0.0011739730834960938
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.933906555175781e-05
+msgdata_bkt generation:  0.0012133121490478516
+msgdata_bkt for loop:  0.0006291866302490234
+NodeBatch generation:  4.0531158447265625e-06
+func(nbatch):  0.0008656978607177734
+----NodeBatch generation time:  0.0028290748596191406
+----Frame generation time:  1.3113021850585938e-05
+---- merge nodes time:  0.00017118453979492188
+invoke_udf_reduce time:  0.09156560897827148
+
+current graph nodes  848411
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.0001556873321533203
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  3.337860107421875e-06
+msgdata = Frame(msgdata) time :  2.384185791015625e-07
+get ready time :  0.00021219253540039062
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08721375465393066
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011134147644042969
+tmp = F.gather_row(idx, eqidx)  2.8133392333984375e-05
+N = math.ceil(len(tmp)/num_split)  1.2636184692382812e-05
+unique_val = np.asarray(list([degree.item()]))  3.4809112548828125e-05
+step:  2
+bucketing time:  0.0879364013671875
+len node_bkt:  48153
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0008318424224853516
+assert len(eid_bkt) == deg * len(node_bkt):  1.7642974853515625e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.4373016357421875e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002951622009277344
+ndata_bkt = dstdata.subframe(node_bkt):  5.125999450683594e-05
+eid_bkt generation:  0.0012640953063964844
+msgdata_bkt = msgdata.subframe(eid_bkt):  4.220008850097656e-05
+msgdata_bkt generation:  0.001306295394897461
+msgdata_bkt for loop:  0.0006375312805175781
+NodeBatch generation:  4.291534423828125e-06
+func(nbatch):  0.0008473396301269531
+----NodeBatch generation time:  0.0029153823852539062
+----Frame generation time:  1.33514404296875e-05
+---- merge nodes time:  0.0001728534698486328
+invoke_udf_reduce time:  0.09143280982971191
+
+current graph nodes  848411
+current graph dst nodes  196571
+current graph edges  1949041
+---------- degree  tensor(10)
+
+degs = graph.in_degrees() time :  0.00015735626220703125
+nodes = graph.dstnodes() time :  2.8371810913085938e-05
+ntid = graph.get_ntype_id_from_dst(ntype) time :  2.86102294921875e-06
+msgdata = Frame(msgdata) time :  4.76837158203125e-07
+get ready time :  0.00021219253540039062
+len val:  196571
+----------- core.py torch.sort() replace to OrderedDict time:  0.08692669868469238
+eqidx = F.nonzero_1d(F.equal(sorted_val, v))  0.00011086463928222656
+tmp = F.gather_row(idx, eqidx)  2.8371810913085938e-05
+N = math.ceil(len(tmp)/num_split)  1.1205673217773438e-05
+unique_val = np.asarray(list([degree.item()]))  3.409385681152344e-05
+step:  3
+bucketing time:  0.08765006065368652
+len node_bkt:  48150
+eid_bkt = F.zerocopy_to_numpy(graph.in_edges(node_bkt, form=eid):  0.0007474422454833984
+assert len(eid_bkt) == deg * len(node_bkt):  1.7881393432617188e-05
+eid_bkt = eid_bkt.reshape((len(node_bkt), deg)):  6.198883056640625e-06
+eid_bkt = F.zerocopy_from_numpy(eid_bkt.flatten()):  0.0002765655517578125
+ndata_bkt = dstdata.subframe(node_bkt):  5.030632019042969e-05
+eid_bkt generation:  0.0010666847229003906
+msgdata_bkt = msgdata.subframe(eid_bkt):  3.695487976074219e-05
+msgdata_bkt generation:  0.0011036396026611328
+msgdata_bkt for loop:  0.0006160736083984375
+NodeBatch generation:  3.814697265625e-06
+func(nbatch):  0.0008351802825927734
+----NodeBatch generation time:  0.002677440643310547
+----Frame generation time:  1.1444091796875e-05
+---- merge nodes time:  0.00016427040100097656
+invoke_udf_reduce time:  0.09090018272399902
+split  buckets total input  1441544
+preparing time:  0.08053755760192871
+model forward time :  0.3684840202331543
+model forward time + loss calculation time:  0.36891770362854004
+loss backward time:  0.016218900680541992
+-------------------------------------------------------------------------------loss_sum  :  tensor(4.1990)
+
+pure train time 0.49309325218200684
+
+avg epoch time:  2.282458339418684
+avg pure train time:  0.4870373862130301
+avg block subtensor loading time:  0.14777238028390066
+avg preparing time:  0.1837554999760219
+avg block to device time:  0.01705796377999442
+avg grouping time:  0.12856667382376535
+avg splitting time:  1.7439895016806466
+avg optimizing time:  0.0011532647269112723
+
+avg input nodes number :  1459849.857142857
+avg real block input nodes number :  848217.2857142857
+avg input nodes number/pure train time :  2997408.2041092403
+avg input nodes number/avg epoch time :  639595.4011211719
