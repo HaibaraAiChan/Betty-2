@@ -2,7 +2,7 @@ nvprof --print-gpu-trace  ./lmp -k on g 1 -sf kk -pk kokkos cuda/aware on neigh 
 
 
 
-
+Start      Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput                          Device           Context   Stream  Name
 
 717.99ms  3.6480us              (2 1 1)       (1 128 1)        27        0B        0B         -           -           -           -  Quadro RTX 6000         1         7  void Kokkos::Impl::cuda_parallel_launch_local_memory<Kokkos::Impl::ParallelFor<AtomVecAtomicKokkos_PackBorder<Kokkos::Cuda, int=1>, Kokkos::RangePolicy<>, Kokkos::Cuda>>(Kokkos::Cuda) [17070]
 718.01ms  3.0080us              (2 1 1)       (1 128 1)        28        0B        0B         -           -           -           -  Quadro RTX 6000         1         7  void Kokkos::Impl::cuda_parallel_launch_local_memory<Kokkos::Impl::ParallelFor<AtomVecAtomicKokkos_UnpackBorder<Kokkos::Cuda>, Kokkos::RangePolicy<>, Kokkos::Cuda>>(Kokkos::Cuda) [17072]
