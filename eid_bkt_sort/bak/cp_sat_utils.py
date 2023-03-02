@@ -724,3 +724,4 @@ def permutation3(model, from_a, perm_a, to_a):
   for i in range(len(from_a)):
     # to_a[i] = from_a[perm_a[i]]
     model.AddElement(perm_a[i],from_a,to_a[i])
+    
