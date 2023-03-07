@@ -39,8 +39,111 @@ import pickle
 from utils import Logger
 import os 
 import numpy
-from collections import Counter
+from collections import Counter,OrderedDict
 
+class OrderedCounter(Counter, OrderedDict):
+	'Counter that remembers the order elements are first encountered'
+
+	def __repr__(self):
+		return '%s(%r)' % (self.__class__.__name__, OrderedDict(self))
+
+	def __reduce__(self):
+		return self.__class__, (OrderedDict(self),)
+
+def get_src_dep(seed,current_layer_block):
+	res=[]
+	induced_src = current_layer_block.srcdata[dgl.NID]
+	eids_global = current_layer_block.edata['_ID']
+	src_nid_list = induced_src.tolist()
+	dict_nid_2_local = dict(zip(src_nid_list, range(len(src_nid_list)))) # speedup 
+	local_seed = list(map(dict_nid_2_local.get, [seed]))
+
+	local_in_edges_tensor = current_layer_block.in_edges(local_seed, form='all')
+	# return (𝑈,𝑉,𝐸𝐼𝐷)
+	# get local srcnid and dstnid from subgraph
+	mini_batch_src_local= list(local_in_edges_tensor)[0] # local (𝑈,𝑉,𝐸𝐼𝐷);
+
+	mini_batch_src_local = list(OrderedDict.fromkeys(mini_batch_src_local.tolist()))
+
+	mini_batch_src_global= induced_src[mini_batch_src_local].tolist() # map local src nid to global.
+	print("mini_batch_src_global ", mini_batch_src_global)
+	
+	return mini_batch_src_global
+
+
+def check_connections_block(batched_nodes_list, current_layer_block):
+	str_=''
+	res=[]
+
+	induced_src = current_layer_block.srcdata[dgl.NID]
+	
+	eids_global = current_layer_block.edata['_ID']
+
+	src_nid_list = induced_src.tolist()
+	# print('src_nid_list ', src_nid_list)
+	# the order of srcdata in current block is not increased as the original graph. For example,
+	# src_nid_list  [1049, 432, 741, 554, ... 1683, 1857, 1183, ... 1676]
+	# dst_nid_list  [1049, 432, 741, 554, ... 1683]
+	
+	dict_nid_2_local = dict(zip(src_nid_list, range(len(src_nid_list)))) # speedup 
+
+	for step, output_nid in enumerate(batched_nodes_list):
+		# in current layer subgraph, only has src and dst nodes,
+		# and src nodes includes dst nodes, src nodes equals dst nodes.
+
+		local_output_nid = list(map(dict_nid_2_local.get, output_nid))
+
+		local_in_edges_tensor = current_layer_block.in_edges(local_output_nid, form='all')
+
+		# return (𝑈,𝑉,𝐸𝐼𝐷)
+		# get local srcnid and dstnid from subgraph
+		mini_batch_src_local= list(local_in_edges_tensor)[0] # local (𝑈,𝑉,𝐸𝐼𝐷);
+
+		mini_batch_src_local = list(OrderedDict.fromkeys(mini_batch_src_local.tolist()))
+
+		mini_batch_src_global= induced_src[mini_batch_src_local].tolist() # map local src nid to global.
+
+		mini_batch_dst_local= list(local_in_edges_tensor)[1]
+		
+		if set(mini_batch_dst_local.tolist()) != set(local_output_nid):
+			print('local dst not match')
+		eid_local_list = list(local_in_edges_tensor)[2] # local (𝑈,𝑉,𝐸𝐼𝐷); 
+		global_eid_tensor = eids_global[eid_local_list] # map local eid to global.
+
+
+		c=OrderedCounter(mini_batch_src_global)
+		list(map(c.__delitem__, filter(c.__contains__,output_nid)))
+		r_=list(c.keys())
+
+		src_nid = torch.tensor(output_nid + r_, dtype=torch.long)
+		output_nid = torch.tensor(output_nid, dtype=torch.long)
+
+		res.append((src_nid, output_nid, global_eid_tensor))
+
+	return res
+
+def generate_one_block(raw_graph, global_srcnid, global_dstnid, global_eids):
+	'''
+
+	Parameters
+	----------
+	G    global graph                     DGLGraph
+	eids  cur_batch_subgraph_global eid   tensor int64
+
+	Returns
+	-------
+
+	'''
+	_graph = dgl.edge_subgraph(raw_graph, global_eids, store_ids=True)
+	edge_dst_list = _graph.edges(order='eid')[1].tolist()
+	dst_local_nid_list=list(OrderedCounter(edge_dst_list).keys())
+	
+	new_block = dgl.to_block(_graph, dst_nodes=torch.tensor(dst_local_nid_list, dtype=torch.long))
+	new_block.srcdata[dgl.NID] = global_srcnid
+	new_block.dstdata[dgl.NID] = global_dstnid
+	new_block.edata['_ID']=_graph.edata['_ID']
+
+	return new_block
 
 
 
@@ -205,7 +308,27 @@ def run(args, device, data):
 					item=pickle.load(handle)
 					full_batch_dataloader.append(item)
 
-			
+			for step, (input_nodes, seeds, blocks) in enumerate(full_batch_dataloader):
+				global_output_nid = seeds
+				dict_seeds_dependency = {}
+				for block in reversed(blocks):
+					for sd in seeds:
+						print('seeds ',sd.tolist())
+						tmp_src = get_src_dep(sd.tolist(), block)
+						print('dependent src nids ', tmp_src)
+						dict_seeds_dependency[sd] = tmp_src
+					return
+
+
+
+
+
+
+
+
+
+
+
 			block_dataloader, weights_list, time_collection = generate_dataloader_block(g, full_batch_dataloader, args)
 			
 			connect_check_time, block_gen_time_total, batch_blocks_gen_time =time_collection
@@ -311,11 +434,11 @@ def main():
 	argparser.add_argument('--GPUmem', type=bool, default=True)
 	argparser.add_argument('--load-full-batch', type=bool, default=True)
 	# argparser.add_argument('--root', type=str, default='../my_full_graph/')
-	argparser.add_argument('--dataset', type=str, default='ogbn-arxiv')
+	# argparser.add_argument('--dataset', type=str, default='ogbn-arxiv')
 	# argparser.add_argument('--dataset', type=str, default='ogbn-mag')
 	# argparser.add_argument('--dataset', type=str, default='ogbn-products')
 	# argparser.add_argument('--dataset', type=str, default='cora')
-	# argparser.add_argument('--dataset', type=str, default='karate')
+	argparser.add_argument('--dataset', type=str, default='karate')
 	# argparser.add_argument('--dataset', type=str, default='reddit')
 	# argparser.add_argument('--aggre', type=str, default='lstm')
 	argparser.add_argument('--aggre', type=str, default='mean')
@@ -335,9 +458,11 @@ def main():
 
 	argparser.add_argument('--num-hidden', type=int, default=6)
 
-	argparser.add_argument('--num-layers', type=int, default=1)
-	argparser.add_argument('--fan-out', type=str, default='10')
-	# argparser.add_argument('--num-layers', type=int, default=2)
+	# argparser.add_argument('--num-layers', type=int, default=1)
+	# argparser.add_argument('--fan-out', type=str, default='10')
+	# argparser.add_argument('--fan-out', type=str, default='10')
+	argparser.add_argument('--num-layers', type=int, default=2)
+	argparser.add_argument('--fan-out', type=str, default='2,4')
 	# argparser.add_argument('--fan-out', type=str, default='10,25')
 	
 	argparser.add_argument('--log-indent', type=float, default=2)
